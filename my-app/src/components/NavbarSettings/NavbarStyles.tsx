@@ -14,6 +14,9 @@ const Theme = {
 };
 
 const Nav = styled.nav`
+  width: 100%;
+  z-index: 9;
+  position: absolute;
   padding-top: 15px;
   padding-bottom: 10px;
   background: ${Theme.colors.bg};

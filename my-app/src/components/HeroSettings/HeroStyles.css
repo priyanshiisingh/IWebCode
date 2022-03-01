@@ -1,0 +1,195 @@
+.herobg {
+    padding-top: 15rem;
+    background-color: #008374;
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.heroUpper {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    --bs-gutter-x: 1.5rem;
+    box-sizing: border-box;
+    display: block;
+    margin-left: auto;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.heroLower {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+    --bs-gutter-x: 1.5rem;
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.heroRow {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) / -2);
+    margin-left: calc(var(--bs-gutter-x) / -2);
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.heroColumn {
+    position: relative;
+    text-align: center !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) / 2);
+    padding-left: calc(var(--bs-gutter-x) / 2);
+    margin-top: var(--bs-gutter-y);
+    display: block;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.upperTitle {
+    color: #fff;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    font-size: calc(1.375rem + 1.5vw);
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+    box-sizing: border-box;
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center !important;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+}
+
+.upperMaster {
+    max-width: 550px;
+    margin: 0 auto;
+    margin-bottom: 3rem !important;
+    box-sizing: border-box;
+    display: block;
+    text-align: center !important;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.upperMaster>p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center !important;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+.herobtn {
+    background-color: #f85a40;
+    color: #fff;
+    border: 2px solid #f85a40;
+    padding: 12px 30px;
+    border-radius: 4px;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+}
+
+.person1 {
+    left: -250px;
+    position: absolute;
+    top: -80px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    /* vertical-align: middle; */
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    box-sizing: border-box;
+}
+
+.person2 {
+    right: -250px;
+    position: absolute;
+    top: -80px;
+    box-sizing: border-box;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    /* vertical-align: middle; */
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+}
+
+.lowerCard {
+    padding: 50px;
+    margin-top: 15rem;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    background: #009080;
+    box-sizing: border-box;
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.lowerRow {
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) / -2);
+    margin-left: calc(var(--bs-gutter-x) / -2);
+    display: flex;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.8;
+}
