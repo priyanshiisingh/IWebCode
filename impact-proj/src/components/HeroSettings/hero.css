@@ -1,7 +1,7 @@
 .person1 {
-    left: -0px;
+    left: 170px;
     position: absolute;
-    top: 150px;
+    top: 160px;
     display: block;
     max-width: 100%;
     height: auto;
@@ -12,9 +12,9 @@
 }
 
 .person2 {
-    right: -0px;
+    right: 180px;
     position: absolute;
-    top: 150px;
+    top: 160px;
     box-sizing: border-box;
     display: block;
     max-width: 100%;

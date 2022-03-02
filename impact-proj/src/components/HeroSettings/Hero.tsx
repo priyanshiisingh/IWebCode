@@ -28,7 +28,7 @@ export default function Hero() {
           iusto nobis ex aperiam cumque reprehenderit, saepe culpa qui eos ullam
           minima quo, consequuntur
         </Text>
-        <Stack spacing={6} direction={"row"}>
+        <Stack spacing={6} direction={"column"} pb={"100px"}>
           <Button
             rounded={"4px"}
             px={"30px"}
@@ -41,20 +41,18 @@ export default function Hero() {
             mt={"30px"}>
             Get In Touch
           </Button>
-          <Image
-            src="https://untree.co/demos/impact/images/persons-group-1.png"
-            alt="image1"
-            height="100%"
-            className="person1"
-          />
-          <Image
-            src="https://untree.co/demos/impact/images/persons-group-2.png"
-            alt="image2"
-            height="100%"
-            className="person2"
-          />
         </Stack>
       </Stack>
+      <Image
+        src="https://untree.co/demos/impact/images/persons-group-1.png"
+        alt="image1"
+        className="person1"
+      />
+      <Image
+        src="https://untree.co/demos/impact/images/persons-group-2.png"
+        alt="image2"
+        className="person2"
+      />
     </Container>
   );
 }
