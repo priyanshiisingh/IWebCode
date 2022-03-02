@@ -1,0 +1,18 @@
+.contentMain {
+    margin-bottom: 35px;
+    font-size: 30px;
+}
+
+.liMat {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.liCon {
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}

@@ -7,11 +7,11 @@ import Hero from "./components/HeroSettings/Hero";
 import { linking } from "./components/HeroSettings/HeroLinks";
 
 import WhyUs from "./components/WhyUsSettings/WhyUs";
-import { filing } from "./components/WhyUsSettings/WhyUsFiling";
+import { Links } from "./components/WhyUsSettings/WhyUsLinking";
 
 function App() {
   const { brand, links } = navigation;
-  const { contents } = filing;
+  const { contents } = Links;
 
   return (
     <div className="App">
