@@ -13,35 +13,24 @@ const Theme = {
   },
 };
 
-const Nav = styled.nav`
+const Body = styled.div`
   width: 100%;
-  z-index: 9;
   position: absolute;
-  padding-top: 15px;
-  padding-bottom: 10px;
-  background: ${Theme.colors.bg};
+  background: white;
   font-family: ${Theme.fonts.heading};
-  color: ${Theme.colors.light};
   display: flex;
   align-items: center;
   justify-content: space-around;
-  a {
-    color: white;
-    text-decoration: none;
-  }
+  flex-direction: row;
+  padding: 100px 160px 115px 155px;
 `;
 
-const Brand = styled.a`
+const Content = styled.div`
   font-size: 24px;
   font-weight: 700;
 `;
 
-const Ul = styled.ul`
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-`;
+const CoverImg = styled.div``;
 
 const Li = styled.li`
   flex: 0 0 auto;
@@ -63,11 +52,10 @@ const Li = styled.li`
   font-weight: 400;
   font-size: 14px;
   height: 50px;
-  justify-content: center;
   line-height: 1.8;
   margin: 0 10px;
   text-decoration: none;
-  white-space: nowrap;
+  flex-direction: column;
 `;
 
-export { Theme, Nav, Brand, Ul, Li };
+export { Theme, Body, Content, CoverImg, Li };

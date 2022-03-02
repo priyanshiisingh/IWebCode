@@ -7,7 +7,9 @@ const Hero = () => {
       <div className="heroUpper">
         <div className="heroRow">
           <div className="heroColumn">
-            <h1 className="upperTitle">Let's growth your business with us</h1>
+            <h1 className="upperTitle">
+              Let's growth your business <br /> with us
+            </h1>
             <div className="upperContent">
               <div className="upperMaster">
                 <p>
@@ -37,26 +39,37 @@ const Hero = () => {
       <div className="heroLower">
         <div className="lowerCard">
           <div className="lowerRow">
-            <div className="lowerInnerCard">
-              <h1>
-                Sapiente, assumenda suscipit autem ab expedita dignissimos,
-                corrupti iusto nobis ex aperiam cumque reprehenderit, saepe
-                culpa qui eos ullam minima quo, consequuntur.
-              </h1>
+            <div className="lowerColumn">
+              <div className="lowerFeature">
+                <div className="featureIcon">
+                  <span className="icon-layers"></span>
+                </div>
+                <div className="featureText">
+                  <h1>
+                    Sapiente, assumenda suscipit autem ab expedita dignissimos,
+                    corrupti iusto nobis ex aperiam cumque reprehenderit, saepe
+                    culpa qui eos ullam minima quo, consequuntur.
+                  </h1>
+                </div>
+              </div>
             </div>
-            <div className="lowerInnerCard">
-              <h1>
-                Sapiente, assumenda suscipit autem ab expedita dignissimos,
-                corrupti iusto nobis ex aperiam cumque reprehenderit, saepe
-                culpa qui eos ullam minima quo, consequuntur.
-              </h1>
+            <div className="lowerColumn">
+              <div className="lowerInnerCard">
+                <h1>
+                  Sapiente, assumenda suscipit autem ab expedita dignissimos,
+                  corrupti iusto nobis ex aperiam cumque reprehenderit, saepe
+                  culpa qui eos ullam minima quo, consequuntur.
+                </h1>
+              </div>
             </div>
-            <div className="lowerInnerCard">
-              <h1>
-                Sapiente, assumenda suscipit autem ab expedita dignissimos,
-                corrupti iusto nobis ex aperiam cumque reprehenderit, saepe
-                culpa qui eos ullam minima quo, consequuntur.
-              </h1>
+            <div className="lowerColumn">
+              <div className="lowerInnerCard">
+                <h1>
+                  Sapiente, assumenda suscipit autem ab expedita dignissimos,
+                  corrupti iusto nobis ex aperiam cumque reprehenderit, saepe
+                  culpa qui eos ullam minima quo, consequuntur.
+                </h1>
+              </div>
             </div>
           </div>
         </div>
