@@ -4,6 +4,7 @@ import { navigation } from "./components/NavbarSettings/Navigation";
 import Hero from "./components/HeroSettings/Hero";
 import WhyUsFeature from "./components/WhyUsSettings/WhyUs";
 import WhiteBg from "./components/WhiteBgSettings/WhiteBg";
+import VideoSec from "./components/VideoSecSettings/VideoSec";
 
 const App = () => {
   const { brand, links } = navigation;
@@ -13,6 +14,7 @@ const App = () => {
       <Hero />
       <WhyUsFeature />
       <WhiteBg />
+      <VideoSec />
     </div>
   );
 };
