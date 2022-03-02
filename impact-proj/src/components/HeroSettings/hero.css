@@ -23,3 +23,51 @@
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
 }
+
+
+/* @media only screen and (max-width: 600px) {
+    .person1 {
+        display: none;
+    }
+    .person2 {
+        display: none;
+    }
+} */
+
+@media only screen and (max-width: 950px) {
+    .person1 {
+        display: none;
+    }
+    .person2 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .person1 {
+        left: -25px;
+    }
+    .person2 {
+        right: -25px;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .person1 {
+        left: 50px;
+    }
+    .person2 {
+        right: 50px;
+    }
+}
+
+
+/* 
+@media only screen and (max-width: 992px) {
+    .person1 {
+        
+    }
+    .person2 {
+        
+    }
+} */

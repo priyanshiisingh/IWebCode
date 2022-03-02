@@ -10,6 +10,7 @@ import {
   IconProps,
 } from "@chakra-ui/react";
 import "./hero.css";
+import HeroFeature from "./HeroFeature";
 
 export default function Hero() {
   return (
@@ -17,10 +18,10 @@ export default function Hero() {
       <Stack textAlign={"center"} align={"center"}>
         <Heading
           fontWeight={700}
-          fontSize={{ base: "3xl", md: "5xl" }}
+          fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
           font-family={"Montserrat"}
           color={"white"}
-          maxW={"600px"}>
+          maxW={{ lg: "500px", xl: "600px" }}>
           Let's growth your business with us
         </Heading>
         <Text color={"rgba(255, 255, 255, 0.8)"} maxW={"520px"}>
@@ -38,10 +39,13 @@ export default function Hero() {
             font-family={"Open Sans"}
             bg={"#f85a40"}
             _hover={{ bg: "#f85a40" }}
-            mt={"30px"}>
+            mt={"30px"}
+            mb={"150px"}
+            maxW={"fit-content"}>
             Get In Touch
           </Button>
         </Stack>
+        <HeroFeature />
       </Stack>
       <Image
         src="https://untree.co/demos/impact/images/persons-group-1.png"
