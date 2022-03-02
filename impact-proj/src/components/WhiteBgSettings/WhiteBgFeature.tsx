@@ -39,11 +39,7 @@ const Feature = ({ title, text, icon }: FeatureProps) => {
 
 export default function WhiteBgFeature() {
   return (
-    <Box
-      p={4}
-      width={{ lg: "80%" }}
-      borderRadius={"8px"}
-      border={"1px solid black"}>
+    <Box p={4} width={{ lg: "80%" }} borderRadius={"8px"}>
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
         <Feature
           icon={
