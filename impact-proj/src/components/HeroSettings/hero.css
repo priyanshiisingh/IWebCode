@@ -1,0 +1,25 @@
+.person1 {
+    left: -0px;
+    position: absolute;
+    top: 150px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    vertical-align: middle;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+}
+
+.person2 {
+    right: -0px;
+    position: absolute;
+    top: 150px;
+    box-sizing: border-box;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+}
