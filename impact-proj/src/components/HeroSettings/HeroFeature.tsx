@@ -17,7 +17,10 @@ interface FeatureProps {
 
 const Feature = ({ title, text, iconName }: FeatureProps) => {
   return (
-    <Stack className="cardStack" direction={{ base: "column", lg: "row" }}>
+    <Stack
+      className="cardStack"
+      direction={{ base: "column", lg: "row" }}
+      m={"25px"}>
       <Stack>
         <Flex
           w={16}
@@ -50,7 +53,7 @@ export default function HeroFeature() {
       width={{ lg: "80%" }}
       borderRadius={"8px"}
       color={"white"}>
-      <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
+      <SimpleGrid columns={{ base: 1, md: 3 }} spacing={-6}>
         <Feature
           iconName={<Icon2 icon="layers1" size={"50px"} color="white" />}
           title={"Design"}

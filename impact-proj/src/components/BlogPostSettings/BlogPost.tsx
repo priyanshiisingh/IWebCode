@@ -18,15 +18,19 @@ import {
 } from "@chakra-ui/react";
 
 interface BlogAuthorProps {
-  date: Date;
   comments: string;
 }
 
 export const BlogAuthor: React.FC<BlogAuthorProps> = (props) => {
   return (
-    <HStack marginTop="2" spacing="2" display="flex" alignItems="center">
-      <Text>{props.date.toLocaleDateString()}</Text>
-      <Text>*</Text>
+    <HStack
+      marginTop="2"
+      spacing="2"
+      display="flex"
+      alignItems="center"
+      color={"grey"}>
+      <Text>May 27, 2021</Text>
+      <Text>•</Text>
       <Text>{props.comments}</Text>
     </HStack>
   );
@@ -34,11 +38,8 @@ export const BlogAuthor: React.FC<BlogAuthorProps> = (props) => {
 
 const ArticleList = () => {
   return (
-    <Container mt={{ lg: "80px" }} mb={{ lg: "80px" }}>
-      <Heading as="h2" marginTop="5">
-        Blog Posts
-      </Heading>
-      <Wrap marginTop="5">
+    <Container mt="70px" mb={{ lg: "80px" }}>
+      <Wrap>
         <WrapItem width={{ base: "100%", lg: "100%" }}>
           <Box w={{ lg: "100%" }}>
             <Box borderRadius="lg" overflow="hidden">
@@ -50,10 +51,7 @@ const ArticleList = () => {
                 />
               </Link>
             </Box>
-            <BlogAuthor
-              date={new Date("2021-04-06T19:01:27Z")}
-              comments={"12 comments"}
-            />
+            <BlogAuthor comments={"12 comments"} />
             <Heading fontSize="xl" marginTop="2">
               <Link textDecoration="none" _hover={{ textDecoration: "none" }}>
                 Important of getting a notifications
@@ -63,7 +61,9 @@ const ArticleList = () => {
               Sapiente, assumenda suscipit autem ab expedita dignissimos,
               corrupti iusto nobis ex aperiam cumque reprehenderit consequuntur.
             </Text>
-            <Button>Read More</Button>
+            <Link textDecoration={"none"} color="#f85a40">
+              Read More
+            </Link>
           </Box>
         </WrapItem>
       </Wrap>

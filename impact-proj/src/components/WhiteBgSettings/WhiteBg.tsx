@@ -44,7 +44,7 @@ export default function WhiteBg() {
         <SimpleGrid
           columns={{ base: 1, lg: 2 }}
           spacing={"10"}
-          mt={{ lg: "130px" }}
+          mt={{ lg: "115px" }}
           mx={{ lg: "150px" }}
           mb={{ lg: "50px" }}>
           <Stack spacing={4}>
