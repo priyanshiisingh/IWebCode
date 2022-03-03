@@ -19,7 +19,6 @@ export default function Hero() {
         <Heading
           fontWeight={700}
           fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
-          font-family={"Montserrat"}
           color={"white"}
           maxW={{ lg: "500px", xl: "600px" }}>
           Let's growth your business with us
@@ -36,7 +35,6 @@ export default function Hero() {
             py={"25px"}
             colorScheme={"teal"}
             fontWeight={"400"}
-            font-family={"Open Sans"}
             bg={"#f85a40"}
             _hover={{ bg: "#f85a40" }}
             mt={"30px"}

@@ -115,7 +115,7 @@ export default function Footer() {
           </Stack>
         </SimpleGrid>
       </Container>
-      <Stack mt={{ lg: "50px" }} pb={{ lg: "80px" }}>
+      <Stack mt={{ lg: "70px" }} pb={{ lg: "85px" }}>
         <Text textAlign={"center"}>
           Copyright ©2022. All Rights Reserved. — Designed with love by
           Untree.co • License

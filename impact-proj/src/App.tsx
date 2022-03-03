@@ -9,6 +9,7 @@ import Carousel from "./components/CarouselSettings/Carousel";
 import Testimonial from "./components/CarouselSettings/TestimonialSettings/Testimonial";
 import BlogPosts from "./components/BlogPostSettings/BlogPosts";
 import Footer from "./components/FooterSettings/Footer";
+import "./App.css";
 
 const App = () => {
   const { brand, links } = navigation;
