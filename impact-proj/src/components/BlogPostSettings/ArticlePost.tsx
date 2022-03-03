@@ -8,6 +8,7 @@ import {
   Divider,
   Button,
   HStack,
+  Stack,
   Tag,
   Wrap,
   WrapItem,
@@ -32,7 +33,13 @@ export const BlogAuthor: React.FC<BlogAuthorProps> = (props) => {
   );
 };
 
-const ArticleList = () => {
+interface ArticlePostProps {
+  image: any;
+  heading: string;
+  text: string;
+}
+
+const Article = ({ image, heading, text }: ArticlePostProps) => {
   return (
     <Container>
       <Heading as="h2" marginTop="5">
@@ -43,11 +50,7 @@ const ArticleList = () => {
           <Box w={{ lg: "100%" }}>
             <Box borderRadius="lg" overflow="hidden">
               <Link textDecoration="none" _hover={{ textDecoration: "none" }}>
-                <Image
-                  src={"https://untree.co/demos/impact/images/post_2.jpg"}
-                  alt="some text"
-                  width="100%"
-                />
+                <Image src={image} alt="some text" width="100%" />
               </Link>
             </Box>
             <BlogAuthor
@@ -56,12 +59,11 @@ const ArticleList = () => {
             />
             <Heading fontSize="xl" marginTop="2">
               <Link textDecoration="none" _hover={{ textDecoration: "none" }}>
-                Important of getting a notifications
+                {heading}
               </Link>
             </Heading>
             <Text as="p" fontSize="md" marginTop="2">
-              Sapiente, assumenda suscipit autem ab expedita dignissimos,
-              corrupti iusto nobis ex aperiam cumque reprehenderit consequuntur.
+              {text}
             </Text>
             <Button>Read More</Button>
           </Box>
@@ -71,4 +73,4 @@ const ArticleList = () => {
   );
 };
 
-export default ArticleList;
+export default function ArticlePost() {}

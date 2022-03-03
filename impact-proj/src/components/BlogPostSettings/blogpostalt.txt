@@ -16,6 +16,7 @@ import {
   Container,
   VStack,
 } from "@chakra-ui/react";
+import { ImageLinks } from "./BlogPostLinking";
 
 interface BlogAuthorProps {
   date: Date;
@@ -33,6 +34,22 @@ export const BlogAuthor: React.FC<BlogAuthorProps> = (props) => {
 };
 
 const ArticleList = () => {
+  const BlogImage = (props: { images: Array<{ source: any }> }) => {
+    const { images } = props;
+    const ContentImage: any = () =>
+      images.map((image: { source: string }) => (
+        <Box borderRadius="lg" overflow="hidden">
+          <Link textDecoration="none" _hover={{ textDecoration: "none" }}>
+            <Box>
+              <img src={image.source} alt="image" width="100%" />
+            </Box>
+          </Link>
+        </Box>
+      ));
+    return <ContentImage />;
+  };
+  const { images } = ImageLinks;
+
   return (
     <Container>
       <Heading as="h2" marginTop="5">
@@ -41,15 +58,7 @@ const ArticleList = () => {
       <Wrap marginTop="5">
         <WrapItem width={{ base: "100%", lg: "100%" }}>
           <Box w={{ lg: "100%" }}>
-            <Box borderRadius="lg" overflow="hidden">
-              <Link textDecoration="none" _hover={{ textDecoration: "none" }}>
-                <Image
-                  src={"https://untree.co/demos/impact/images/post_2.jpg"}
-                  alt="some text"
-                  width="100%"
-                />
-              </Link>
-            </Box>
+            <BlogImage images={images} />
             <BlogAuthor
               date={new Date("2021-04-06T19:01:27Z")}
               comments={"12 comments"}

@@ -46,7 +46,7 @@ export default function VideoSec() {
             align={"center"}
             w={"100%"}
             h={"100%"}
-            src={"https://www.youtube.com/watch?v=KI2lsdXJQ40"}
+            src={"https://untree.co/demos/impact/images/hero-min.jpg"}
           />
         </Box>
         <Stack flex={1} spacing={{ base: 5, md: 10 }}>

@@ -7,7 +7,7 @@ import WhiteBg from "./components/WhiteBgSettings/WhiteBg";
 import VideoSec from "./components/VideoSecSettings/VideoSec";
 import Carousel from "./components/CarouselSettings/Carousel";
 import Testimonial from "./components/CarouselSettings/TestimonialSettings/Testimonial";
-import BlogPost from "./components/BlogPostSettings/BlogPost";
+import BlogPosts from "./components/BlogPostSettings/BlogPosts";
 
 const App = () => {
   const { brand, links } = navigation;
@@ -20,7 +20,7 @@ const App = () => {
       <VideoSec />
       {/* <Carousel />*/}
       <Testimonial />
-      <BlogPost />
+      <BlogPosts />
     </div>
   );
 };
