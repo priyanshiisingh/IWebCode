@@ -34,7 +34,7 @@ export const BlogAuthor: React.FC<BlogAuthorProps> = (props) => {
 
 const ArticleList = () => {
   return (
-    <Container>
+    <Container mt={{ lg: "80px" }} mb={{ lg: "80px" }}>
       <Heading as="h2" marginTop="5">
         Blog Posts
       </Heading>

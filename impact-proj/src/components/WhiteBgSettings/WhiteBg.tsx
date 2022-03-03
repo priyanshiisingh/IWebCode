@@ -42,11 +42,11 @@ export default function WhiteBg() {
     <Container maxW={"100%"}>
       <Stack align={"center"}>
         <SimpleGrid
-          columns={{ base: 1, md: 2 }}
+          columns={{ base: 1, lg: 2 }}
           spacing={"10"}
-          mt={"130px"}
-          mx={"150px"}
-          mb={"250px"}>
+          mt={{ lg: "130px" }}
+          mx={{ lg: "150px" }}
+          mb={{ lg: "50px" }}>
           <Stack spacing={4}>
             <Heading>Why Growing Your Business is Important</Heading>
             <Text color={"gray.500"} fontSize={"lg"}>

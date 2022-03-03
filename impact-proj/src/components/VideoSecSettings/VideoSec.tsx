@@ -5,6 +5,7 @@ import {
   Box,
   Heading,
   Text,
+  Link,
   Button,
   Image,
   Icon,
@@ -13,8 +14,12 @@ import {
   IconProps,
   useColorModeValue,
 } from "@chakra-ui/react";
+import { useDisclosure } from "@chakra-ui/react";
+
+import { VideoModal } from "./Modal";
 
 export default function VideoSec() {
+  const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <Container maxW={"7xl"}>
       <Stack
@@ -22,32 +27,32 @@ export default function VideoSec() {
         spacing={{ base: 8, md: 10 }}
         py={{ base: 20, md: 28 }}
         direction={{ base: "column", md: "row" }}>
-        <Box
-          position={"relative"}
-          height={"300px"}
-          rounded={"2xl"}
-          width={"50%"}
-          overflow={"hidden"}>
+        <Box position={"relative"} height={"100%"} width={{ lg: "57%" }}>
           <IconButton
             aria-label={"Play Button"}
-            variant={"ghost"}
-            _hover={{ bg: "transparent" }}
-            icon={<PlayIcon w={12} h={12} />}
-            size={"lg"}
-            color={"white"}
+            icon={<PlayIcon w={"90px"} h={"90px"} />}
+            variant={"solid"}
+            colorScheme={"white"}
             position={"absolute"}
             left={"50%"}
             top={"50%"}
             transform={"translateX(-50%) translateY(-50%)"}
+            onClick={onOpen}
           />
-          <Image
-            alt={"Hero Image"}
-            fit={"cover"}
-            align={"center"}
-            w={"100%"}
-            h={"100%"}
-            src={"https://untree.co/demos/impact/images/hero-min.jpg"}
-          />
+
+          <Link textDecoration="none" _hover={{ textDecoration: "none" }}>
+            <Stack background={"black"}>
+              <Image
+                opacity={"0.5"}
+                alt={"Hero Image"}
+                fit={"cover"}
+                align={"center"}
+                w={"100%"}
+                h={"100%"}
+                src={"https://untree.co/demos/impact/images/hero-min.jpg"}
+              />
+            </Stack>
+          </Link>
         </Box>
         <Stack flex={1} spacing={{ base: 5, md: 10 }}>
           <Heading>Get Started with Impact,</Heading>
