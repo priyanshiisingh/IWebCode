@@ -1,12 +1,23 @@
 import { ReactElement } from "react";
-import { Box, SimpleGrid, Icon, Text, Stack, Flex } from "@chakra-ui/react";
+import {
+  Box,
+  SimpleGrid,
+  Icon,
+  Text,
+  Image,
+  Stack,
+  Flex,
+} from "@chakra-ui/react";
 import { FcAssistant, FcDonate, FcInTransit } from "react-icons/fc";
 import "./heroFeature.css";
+import image1 from "../images/stack.png";
+import image2 from "../images/devices.png";
+import image3 from "../images/local_mall.png";
 
 interface FeatureProps {
   title: string;
   text: string;
-  icon: ReactElement;
+  icon: any;
 }
 
 const Feature = ({ title, text, icon }: FeatureProps) => {
@@ -19,7 +30,6 @@ const Feature = ({ title, text, icon }: FeatureProps) => {
         justify={"center"}
         color={"white"}
         rounded={"full"}
-        bg={"gray.100"}
         mb={1}>
         {icon}
       </Flex>
@@ -45,21 +55,21 @@ export default function HeroFeature() {
       color={"white"}>
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
         <Feature
-          icon={<Icon as={FcAssistant} w={10} h={10} />}
+          icon={<Image src={image1} alt="image1" className="img" />}
           title={"Design"}
           text={
             "Sapiente, assumenda suscipit autem ab expedita dignissimos, corrupti iusto nobis ex aperiam cumque reprehenderit, saepe culpa qui eos ullam minima quo, consequuntur."
           }
         />
         <Feature
-          icon={<Icon as={FcDonate} w={10} h={10} />}
+          icon={<Image src={image2} alt="image2" className="img" />}
           title={"Applications"}
           text={
             "Sapiente, assumenda suscipit autem ab expedita dignissimos, corrupti iusto nobis ex aperiam cumque reprehenderit, saepe culpa qui eos ullam minima quo, consequuntur."
           }
         />
         <Feature
-          icon={<Icon as={FcInTransit} w={10} h={10} />}
+          icon={<Image src={image3} alt="image3" className="img" />}
           title={"e-commerce"}
           text={
             "Sapiente, assumenda suscipit autem ab expedita dignissimos, corrupti iusto nobis ex aperiam cumque reprehenderit, saepe culpa qui eos ullam minima quo, consequuntur."

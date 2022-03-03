@@ -56,12 +56,12 @@ const ListHeader = ({ children }: { children: ReactNode }) => {
 
 export default function Footer() {
   return (
-    <Box bg={"black"} color={"white"}>
-      <Container as={Stack} maxW={"6xl"} py={10}>
+    <Box bg={"black"} color={"white"} pt={{ lg: "100px" }}>
+      <Container as={Stack} maxW={"7xl"}>
         <SimpleGrid
           templateColumns={{ sm: "1fr 1fr", md: "2fr 1fr 1fr 2fr" }}
           spacing={8}>
-          <Stack spacing={6}>
+          <Stack spacing={4}>
             <Box>
               <Text>About Impact</Text>
             </Box>
@@ -114,11 +114,13 @@ export default function Footer() {
             <Link href={"#"}>info@mydomain.com</Link>
           </Stack>
         </SimpleGrid>
+      </Container>
+      <Stack mt={{ lg: "50px" }} pb={{ lg: "80px" }}>
         <Text textAlign={"center"}>
           Copyright ©2022. All Rights Reserved. — Designed with love by
           Untree.co • License
         </Text>
-      </Container>
+      </Stack>
     </Box>
   );
 }
