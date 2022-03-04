@@ -37,7 +37,7 @@ const Feature = ({ text, icon, content }: FeatureProps) => {
 
 export default function WhyUsFeature() {
   return (
-    <Container maxW={"100%"} padding={{ lg: "140px" }} bg={"#fafafa"}>
+    <Container maxW={"100%"} padding={{ lg: "140px" }}>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={"10"}>
         <Stack spacing={4}>
           <Heading>Why you should choose us</Heading>

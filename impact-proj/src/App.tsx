@@ -5,11 +5,12 @@ import Hero from "./components/HeroSettings/Hero";
 import WhyUsFeature from "./components/WhyUsSettings/WhyUs";
 import WhiteBg from "./components/WhiteBgSettings/WhiteBg";
 import VideoSec from "./components/VideoSecSettings/VideoSec";
-import Carousel from "./components/CarouselSettings/Carousel";
-import Testimonial from "./components/CarouselSettings/TestimonialSettings/Testimonial";
+// import { Carousel } from "./components/CarouselSettings/Carousel";
+// import Testimonial from "./components/CarouselSettings/TestimonialSettings/Testimonial";
 import BlogPosts from "./components/BlogPostSettings/BlogPosts";
 import Footer from "./components/FooterSettings/Footer";
 import "./App.css";
+import { SliderContent } from "./components/CarouselSettings/Slider";
 
 const App = () => {
   const { brand, links } = navigation;
@@ -20,8 +21,9 @@ const App = () => {
       <WhyUsFeature />
       <WhiteBg />
       <VideoSec />
-      {/* <Carousel />*/}
-      <Testimonial />
+      {/* <Carousel /> */}
+      <SliderContent />
+      {/* <Testimonial /> */}
       <BlogPosts />
       <Footer />
     </div>

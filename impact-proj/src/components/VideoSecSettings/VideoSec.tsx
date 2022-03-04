@@ -73,7 +73,7 @@ export default function VideoSec() {
             align={{ lg: "flex-start" }}
             justify={"center"}
             minH={{ lg: "100%" }}
-            maxW={{ lg: "70%" }}>
+            maxW={{ lg: "75%" }}>
             <Heading fontSize={"30px"} mb={"15px"}>
               Get Started with Impact
             </Heading>

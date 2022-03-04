@@ -16,6 +16,7 @@ import {
   Container,
   VStack,
 } from "@chakra-ui/react";
+import { ChevronRightIcon } from "@chakra-ui/icons";
 
 interface BlogAuthorProps {
   comments: string;
