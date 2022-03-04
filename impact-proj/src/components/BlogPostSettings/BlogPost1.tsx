@@ -49,46 +49,44 @@ export const BlogPost = () => {
   return (
     <Stack
       direction={{ base: "column", md: "row", xl: "row" }}
-      align={"center"}>
+      align={"center"}
+      mt={"70px"}
+      border={"1px solid black"}
+      p={"100px"}>
       {cards.map((card, index) => (
-        <Container mt="70px" mb={{ lg: "80px" }}>
-          <Wrap>
-            <WrapItem width={{ base: "100%", lg: "100%" }}>
-              <Box w={{ lg: "100%" }}>
-                <Box borderRadius="lg" overflow="hidden">
-                  <Link
-                    textDecoration="none"
-                    _hover={{ textDecoration: "none" }}>
-                    <Image src={card.imageSrc} alt="some text" width="100%" />
-                  </Link>
-                </Box>
-                <HStack
-                  marginTop="2"
-                  display="flex"
-                  alignItems="center"
-                  color={"grey"}>
-                  <Text>{card.postDate}</Text>
-                  <Text>•</Text>
-                  <Text>{card.likes}</Text>
-                </HStack>
-
-                <Heading fontSize="xl" marginTop="2">
-                  <Link
-                    textDecoration="none"
-                    _hover={{ textDecoration: "none" }}>
-                    {card.heading}
-                  </Link>
-                </Heading>
-                <Text as="p" fontSize="md" marginTop="2">
-                  {card.content}
-                </Text>
-                <Link textDecoration={"none"} color="#f85a40">
-                  Read More <ChevronRightIcon />
+        <Wrap>
+          <WrapItem>
+            <Box>
+              <Box borderRadius="lg" overflow="hidden">
+                <Link textDecoration="none" _hover={{ textDecoration: "none" }}>
+                  <Image src={card.imageSrc} alt="some text" width="100%" />
                 </Link>
               </Box>
-            </WrapItem>
-          </Wrap>
-        </Container>
+
+              <HStack
+                marginTop="2"
+                display="flex"
+                alignItems="center"
+                color={"grey"}>
+                <Text>{card.postDate}</Text>
+                <Text>•</Text>
+                <Text>{card.likes}</Text>
+              </HStack>
+
+              <Heading fontSize="xl" marginTop="2">
+                <Link textDecoration="none" _hover={{ textDecoration: "none" }}>
+                  {card.heading}
+                </Link>
+              </Heading>
+              <Text as="p" fontSize="md" marginTop="2">
+                {card.content}
+              </Text>
+              <Link textDecoration={"none"} color="#f85a40">
+                Read More <ChevronRightIcon />
+              </Link>
+            </Box>
+          </WrapItem>
+        </Wrap>
       ))}
     </Stack>
   );
