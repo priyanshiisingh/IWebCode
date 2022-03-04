@@ -15,19 +15,26 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import { useDisclosure } from "@chakra-ui/react";
+import { CheckIcon } from "@chakra-ui/icons";
 
 import { VideoModal } from "./Modal";
 
 export default function VideoSec() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
-    <Container maxW={"7xl"}>
+    <Container maxW={"100%"}>
       <Stack
         align={"center"}
         spacing={{ base: 8, md: 10 }}
         py={{ base: 20, md: 28 }}
+        justify={"center"}
         direction={{ base: "column", md: "row" }}>
-        <Box position={"relative"} height={"100%"} width={{ lg: "57%" }}>
+        <Box
+          position={"relative"}
+          height={"100%"}
+          p={{ lg: "30px" }}
+          width={{ lg: "50%" }}
+          ml={{ lg: "50px" }}>
           <IconButton
             aria-label={"Play Button"}
             icon={<PlayIcon w={"90px"} h={"90px"} />}
@@ -54,28 +61,50 @@ export default function VideoSec() {
             </Stack>
           </Link>
         </Box>
-        <Stack flex={1} spacing={{ base: 5, md: 10 }}>
-          <Heading>Get Started with Impact,</Heading>
-          <Text color={"gray.500"}>
-            Labore id odit sit optio, voluptas sequi nobis aliquid dignissimos
-            iure recusandae. Deserunt harum incidunt Ex nesciunt est temporibus
-            ipsum Vel rem eveniet facere et velit sunt Aspernatur eaque quis
-            Dolorem magnam quisquam? Facere
-          </Text>
-          <Button
-            rounded={"4px"}
-            px={"30px"}
-            py={"25px"}
-            colorScheme={"teal"}
-            fontWeight={"400"}
-            font-family={"Open Sans"}
-            bg={"#f85a40"}
-            _hover={{ bg: "#f85a40" }}
-            mt={"30px"}
-            mb={"150px"}
-            maxW={"fit-content"}>
-            Learn More
-          </Button>
+        <Stack
+          mr={{ lg: "50px" }}
+          maxW={{ lg: "fit-content" }}
+          flex={1}
+          height={{ lg: "500px" }}
+          align={{ lg: "center" }}
+          justify={{ lg: "center" }}
+          spacing={{ base: 5, md: 10 }}>
+          <Stack
+            align={{ lg: "flex-start" }}
+            justify={"center"}
+            minH={{ lg: "100%" }}
+            maxW={{ lg: "70%" }}>
+            <Heading fontSize={"30px"} mb={"15px"}>
+              Get Started with Impact
+            </Heading>
+            <Text mb={"15px"}>
+              Labore id odit sit optio, voluptas sequi nobis aliquid dignissimos
+              iure recusandae
+            </Text>
+            <Text mb={"200px"} pl={"20px"}>
+              <ul>
+                <li>Deserunt harum incidunt</li>
+                <li>Ex nesciunt est temporibus ipsum</li>
+                <li>Vel rem eveniet facere et velit sunt</li>
+                <li>Aspernatur eaque quis</li>
+                <li>Dulorem magnam quisquam? Facere</li>
+              </ul>
+            </Text>
+            <Button
+              rounded={"4px"}
+              px={"30px"}
+              py={"25px"}
+              colorScheme={"teal"}
+              fontWeight={"400"}
+              font-family={"Open Sans"}
+              bg={"#f85a40"}
+              _hover={{ bg: "#f85a40" }}
+              mt={"45px"}
+              mb={"150px"}
+              maxW={"fit-content"}>
+              Learn More
+            </Button>
+          </Stack>
         </Stack>
       </Stack>
     </Container>
