@@ -23,12 +23,7 @@ interface BlogAuthorProps {
 
 export const BlogAuthor: React.FC<BlogAuthorProps> = (props) => {
   return (
-    <HStack
-      marginTop="2"
-      spacing="2"
-      display="flex"
-      alignItems="center"
-      color={"grey"}>
+    <HStack marginTop="2" display="flex" alignItems="center" color={"grey"}>
       <Text>May 27, 2021</Text>
       <Text>•</Text>
       <Text>{props.comments}</Text>
