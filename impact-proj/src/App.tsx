@@ -7,10 +7,11 @@ import WhiteBg from "./components/WhiteBgSettings/WhiteBg";
 import VideoSec from "./components/VideoSecSettings/VideoSec";
 // import { Carousel } from "./components/CarouselSettings/Carousel";
 // import Testimonial from "./components/CarouselSettings/TestimonialSettings/Testimonial";
-import BlogPosts from "./components/BlogPostSettings/BlogPosts";
+import { BlogPost } from "./components/BlogPostSettings/BlogPost1";
 import Footer from "./components/FooterSettings/Footer";
 import "./App.css";
 import { SliderContent } from "./components/CarouselSettings/Slider";
+// import { New } from "./components/BlogPostSettings/New";
 
 const App = () => {
   const { brand, links } = navigation;
@@ -24,8 +25,9 @@ const App = () => {
       {/* <Carousel /> */}
       <SliderContent />
       {/* <Testimonial /> */}
-      <BlogPosts />
+      <BlogPost />
       <Footer />
+      {/* <New /> */}
     </div>
   );
 };
