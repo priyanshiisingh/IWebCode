@@ -39,7 +39,7 @@ const Feature = ({ text, icon, content }: FeatureProps) => {
 
 export default function WhiteBg() {
   return (
-    <Container maxW={"100%"} 
+    <Container maxW={"100%"}>
       <Stack align={"center"}>
         <SimpleGrid
           columns={{ base: 1, lg: 2 }}

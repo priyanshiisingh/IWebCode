@@ -48,7 +48,7 @@ export const SliderContent = () => {
     },
   ];
   return (
-    <Box bg={"#fafafa"} border={"1px solid red"}>
+    <Box bg={"#fafafa"}>
       <div>
         <link
           rel="stylesheet"
