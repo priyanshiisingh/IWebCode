@@ -24,27 +24,25 @@ const settings = {
 export const SliderContent = () => {
   const cards = [
     {
-      name: "Design Projects 1",
-      designation: "Manger",
+      name: "Maria Jones",
+      designation: "Customer",
       image: "https://untree.co/demos/impact/images/person_1.jpg",
       comments:
-        "The project board is an exclusive resource for contract work. It's perfect for freelancers, agencies, and moonlighters.",
+        "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
     },
     {
-      name: "Design Projects 2",
-      designation:
-        "The project board is an exclusive resource for contract work. It's perfect for freelancers, agencies, and moonlighters.",
+      name: "Maria Jones",
+      designation: "Customer",
       image: "https://untree.co/demos/impact/images/person_2.jpg",
       comments:
-        "The project board is an exclusive resource for contract work. It's perfect for freelancers, agencies, and moonlighters.",
+        "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
     },
     {
-      name: "Design Projects 3",
-      designation:
-        "The project board is an exclusive resource for contract work. It's perfect for freelancers, agencies, and moonlighters.",
+      name: "Maria Jones",
+      designation: "Customer",
       image: "https://untree.co/demos/impact/images/person_3.jpg",
       comments:
-        "The project board is an exclusive resource for contract work. It's perfect for freelancers, agencies, and moonlighters.",
+        "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
     },
   ];
   return (

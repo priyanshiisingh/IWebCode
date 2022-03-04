@@ -14,6 +14,13 @@ import {
   IconProps,
   useColorModeValue,
 } from "@chakra-ui/react";
+import {
+  List,
+  ListItem,
+  ListIcon,
+  OrderedList,
+  UnorderedList,
+} from "@chakra-ui/react";
 import { useDisclosure } from "@chakra-ui/react";
 import { CheckIcon } from "@chakra-ui/icons";
 
@@ -81,14 +88,29 @@ export default function VideoSec() {
               Labore id odit sit optio, voluptas sequi nobis aliquid dignissimos
               iure recusandae
             </Text>
-            <Text mb={"200px"} pl={"20px"}>
-              <ul>
-                <li>Deserunt harum incidunt</li>
-                <li>Ex nesciunt est temporibus ipsum</li>
-                <li>Vel rem eveniet facere et velit sunt</li>
-                <li>Aspernatur eaque quis</li>
-                <li>Dulorem magnam quisquam? Facere</li>
-              </ul>
+            <Text mb={"200px"}>
+              <List>
+                <ListItem>
+                  <ListIcon as={CheckIcon} color="#f85a40" />
+                  Lorem ipsum dolor sit amet
+                </ListItem>
+                <ListItem>
+                  <ListIcon as={CheckIcon} color="#f85a40" />
+                  Consectetur adipiscing elit
+                </ListItem>
+                <ListItem>
+                  <ListIcon as={CheckIcon} color="#f85a40" />
+                  Integer molestie lorem at massa
+                </ListItem>
+                <ListItem>
+                  <ListIcon as={CheckIcon} color="#f85a40" />
+                  Facilisis in pretium nisl aliquet
+                </ListItem>
+                <ListItem>
+                  <ListIcon as={CheckIcon} color="#f85a40" />
+                  Facilisis in pretium nisl aliquet
+                </ListItem>
+              </List>
             </Text>
             <Button
               rounded={"4px"}

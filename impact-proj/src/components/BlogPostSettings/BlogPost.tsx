@@ -58,7 +58,7 @@ const ArticleList = () => {
               corrupti iusto nobis ex aperiam cumque reprehenderit consequuntur.
             </Text>
             <Link textDecoration={"none"} color="#f85a40">
-              Read More
+              Read More <ChevronRightIcon />
             </Link>
           </Box>
         </WrapItem>
