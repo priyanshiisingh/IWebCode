@@ -49,15 +49,15 @@ export const BlogPost = () => {
   return (
     <Stack
       direction={{ base: "column", md: "row", xl: "row" }}
+      justify={"space-evenly"}
       align={"center"}
       mt={"70px"}
-      border={"1px solid black"}
       p={"100px"}>
       {cards.map((card, index) => (
-        <Wrap>
+        <Wrap width={{ lg: "28.5%" }}>
           <WrapItem>
             <Box>
-              <Box borderRadius="lg" overflow="hidden">
+              <Box borderRadius="lg" overflow="hidden" width="100%">
                 <Link textDecoration="none" _hover={{ textDecoration: "none" }}>
                   <Image src={card.imageSrc} alt="some text" width="100%" />
                 </Link>
