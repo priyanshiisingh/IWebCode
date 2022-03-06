@@ -49,7 +49,7 @@ export const BlogPost = () => {
   return (
     <Stack
       direction={{ base: "column", md: "row", xl: "row" }}
-      justify={"space-evenly"}
+      justify={{ lg: "space-evenly" }}
       align={"center"}
       mt={"70px"}
       p={"100px"}>
