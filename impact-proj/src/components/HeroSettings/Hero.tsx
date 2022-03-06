@@ -36,7 +36,7 @@ export default function Hero() {
             colorScheme={"teal"}
             fontWeight={"400"}
             bg={"#f85a40"}
-            _hover={{ bg: "#f85a40" }}
+            _hover={{ bg: "transparent", border: "2px solid white" }}
             mt={"30px"}
             mb={"150px"}
             maxW={"fit-content"}>

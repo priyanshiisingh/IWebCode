@@ -1,6 +1,6 @@
 import * as React from "react";
 import styled from "styled-components";
-import { Theme, Nav, Brand, Ul, Li } from "./NavbarStyles";
+import { Theme, Nav, Brand, Ul, Li, NavLinksStyles } from "./NavbarStyles";
 
 const Navbar = (props: {
   brand: { name: string; to: string };
@@ -10,14 +10,18 @@ const Navbar = (props: {
   const NavLinks: any = () =>
     links.map((link: { name: string; to: string }) => (
       <Li key={link.name}>
-        <a href={link.to}>{link.name}</a>
+        <NavLinksStyles>
+          <a href={link.to}>{link.name}</a>
+        </NavLinksStyles>
       </Li>
     ));
 
   return (
     <Nav>
       <Brand>
-        <a href={brand.to}>{brand.name}</a>
+        <a href={brand.to} color="white">
+          {brand.name}
+        </a>
       </Brand>
       <Ul>
         <NavLinks />

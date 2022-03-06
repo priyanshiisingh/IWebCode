@@ -25,13 +25,20 @@ const Nav = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-around;
+`;
+
+const NavLinksStyles = styled.a`
   a {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  a:hover {
     color: white;
-    text-decoration: none;
   }
 `;
 
 const Brand = styled.a`
+  color: white;
   font-size: 24px;
   font-weight: 700;
 `;
@@ -70,4 +77,4 @@ const Li = styled.li`
   white-space: nowrap;
 `;
 
-export { Theme, Nav, Brand, Ul, Li };
+export { Theme, Nav, Brand, Ul, Li, NavLinksStyles };
