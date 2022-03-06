@@ -13,6 +13,7 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import Icon from "./Icons/playIcon";
+import { CloseButton } from "@chakra-ui/react";
 import { AspectRatio } from "@chakra-ui/react";
 import React, { useState } from "react";
 
@@ -46,7 +47,7 @@ function Modalex() {
         isOpen={isOpen}
         motionPreset="slideInBottom">
         {overlay}
-        <ModalContent>
+        <ModalContent background="transparent">
           <Stack justify="center" align="center">
             <AspectRatio minW={"962px"} ratio={2}>
               <iframe
