@@ -56,65 +56,70 @@ const ListHeader = ({ children }: { children: ReactNode }) => {
 
 export default function Footer() {
   return (
-    <Box bg={"black"} color={"white"} pt={{ lg: "100px" }} pl={{ lg: "130px" }}>
-      <Container as={Stack} maxW={"100%"}>
-        <SimpleGrid
-          templateColumns={{ sm: "1fr 1fr", md: "2fr 1fr 1fr 2fr" }}
-          spacing={8}>
-          <Stack spacing={4}>
-            <Box>
-              <Text>About Impact</Text>
-            </Box>
-            <Text fontSize={"sm"}>
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts.
-            </Text>
-            <Stack direction={"row"}>
-              <SocialButton label={"Twitter"} href={"#"}>
-                <FaTwitter />
-              </SocialButton>
-              <SocialButton label={"YouTube"} href={"#"}>
-                <FaYoutube />
-              </SocialButton>
-              <SocialButton label={"Instagram"} href={"#"}>
-                <FaInstagram />
-              </SocialButton>
-              <SocialButton label={"Instagram"} href={"#"}>
-                <FaInstagram />
-              </SocialButton>
-              <SocialButton label={"Instagram"} href={"#"}>
-                <FaInstagram />
-              </SocialButton>
-              <SocialButton label={"Instagram"} href={"#"}>
-                <FaInstagram />
-              </SocialButton>
+    <Box bg={"black"} color={"white"}>
+      <Box
+        bg={"black"}
+        color={"white"}
+        pt={{ lg: "60px" }}
+        pl={{ lg: "135px" }}>
+        <Container as={Stack} maxW={"100%"}>
+          <SimpleGrid
+            templateColumns={{ sm: "1fr 1fr", md: "2fr 1fr 1fr 2fr" }}>
+            <Stack spacing={6} pr={{ lg: "160px" }} width={{ lg: "550px" }}>
+              <Box>
+                <Text fontWeight={"800"}>About Impact</Text>
+              </Box>
+              <Text fontSize={"sm"}>
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </Text>
+              <Stack direction={"row"}>
+                <SocialButton label={"Twitter"} href={"#"}>
+                  <FaTwitter />
+                </SocialButton>
+                <SocialButton label={"YouTube"} href={"#"}>
+                  <FaYoutube />
+                </SocialButton>
+                <SocialButton label={"Instagram"} href={"#"}>
+                  <FaInstagram />
+                </SocialButton>
+                <SocialButton label={"Instagram"} href={"#"}>
+                  <FaInstagram />
+                </SocialButton>
+                <SocialButton label={"Instagram"} href={"#"}>
+                  <FaInstagram />
+                </SocialButton>
+                <SocialButton label={"Instagram"} href={"#"}>
+                  <FaInstagram />
+                </SocialButton>
+              </Stack>
             </Stack>
-          </Stack>
-          <Stack align={"flex-start"}>
-            <ListHeader>Links</ListHeader>
-            <Link href={"#"}>About us</Link>
-            <Link href={"#"}>Services</Link>
-            <Link href={"#"}>News</Link>
-            <Link href={"#"}>Careers</Link>
-            <Link href={"#"}>Contact</Link>
-          </Stack>
-          <Stack align={"flex-start"}>
-            <ListHeader>Company</ListHeader>
-            <Link href={"#"}>About us</Link>
-            <Link href={"#"}>Service</Link>
-            <Link href={"#"}>News</Link>
-            <Link href={"#"}>Career</Link>
-            <Link href={"#"}>Contact</Link>
-          </Stack>
-          <Stack align={"flex-start"}>
-            <ListHeader>Contact</ListHeader>
-            <Text>43 Raymouth Rd. Baltemoer, London 3910</Text>
-            <Link href={"#"}>+1(123)-456-789</Link>
-            <Link href={"#"}>+1(123)-456-789</Link>
-            <Link href={"#"}>info@mydomain.com</Link>
-          </Stack>
-        </SimpleGrid>
-      </Container>
+            <Stack align={"flex-start"}>
+              <ListHeader>Links</ListHeader>
+              <Link href={"#"}>About us</Link>
+              <Link href={"#"}>Services</Link>
+              <Link href={"#"}>News</Link>
+              <Link href={"#"}>Careers</Link>
+              <Link href={"#"}>Contact</Link>
+            </Stack>
+            <Stack align={"flex-start"}>
+              <ListHeader>Company</ListHeader>
+              <Link href={"#"}>About us</Link>
+              <Link href={"#"}>Service</Link>
+              <Link href={"#"}>News</Link>
+              <Link href={"#"}>Career</Link>
+              <Link href={"#"}>Contact</Link>
+            </Stack>
+            <Stack align={"flex-start"}>
+              <ListHeader>Contact</ListHeader>
+              <Text>43 Raymouth Rd. Baltemoer, London 3910</Text>
+              <Link href={"#"}>+1(123)-456-789</Link>
+              <Link href={"#"}>+1(123)-456-789</Link>
+              <Link href={"#"}>info@mydomain.com</Link>
+            </Stack>
+          </SimpleGrid>
+        </Container>
+      </Box>
       <Stack mt={{ lg: "70px" }} pb={{ lg: "85px" }}>
         <Text textAlign={"center"}>
           Copyright ©2022. All Rights Reserved. — Designed with love by
