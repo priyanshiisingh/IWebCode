@@ -5,6 +5,7 @@ import {
   ModalHeader,
   ModalFooter,
   ModalBody,
+  Stack,
   ModalCloseButton,
   Button,
   IconButton,
@@ -12,35 +13,50 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import Icon from "./Icons/playIcon";
+import { AspectRatio } from "@chakra-ui/react";
+import React, { useState } from "react";
 
 function Modalex() {
+  const OverlayBg = () => <ModalOverlay bg="blackAlpha.900" />;
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const [overlay, setOverlay] = React.useState(<OverlayBg />);
   return (
     <>
       <Button
         // variant={"solid"}
         // colorScheme={"white"}
-        width={"100px"}
-        height={"100px"}
+        width={"80px"}
+        height={"80px"}
         position={"absolute"}
         left={"50%"}
         top={"50%"}
         transform={"translateX(-50%) translateY(-50%)"}
         borderRadius={"100%"}
-        onClick={onOpen}>
-        <Icon icon="play3" size={"15px"} color="black" />
+        onClick={() => {
+          setOverlay(<OverlayBg />);
+          onOpen();
+        }}
+        border={"none"}>
+        <Icon icon="play3" size={"17px"} color="black" />
       </Button>
 
-      <Modal isOpen={isOpen} onClose={onClose}>
-        <ModalOverlay />
-        <ModalCloseButton />
+      <Modal
+        isCentered
+        onClose={onClose}
+        isOpen={isOpen}
+        motionPreset="slideInBottom">
+        {overlay}
         <ModalContent>
-          <iframe
-            width="962"
-            height="541"
-            src="https://www.youtube.com/embed/KI2lsdXJQ40"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+          <Stack justify="center" align="center">
+            <AspectRatio minW={"962px"} ratio={2}>
+              <iframe
+                src="https://www.youtube.com/embed/KI2lsdXJQ40"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </AspectRatio>
+          </Stack>
         </ModalContent>
       </Modal>
     </>
