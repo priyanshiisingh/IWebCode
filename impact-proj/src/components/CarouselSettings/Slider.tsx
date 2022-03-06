@@ -1,23 +1,26 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import {
   Box,
   IconButton,
   useBreakpointValue,
+  Button,
   Flex,
   Image,
   Text,
 } from "@chakra-ui/react";
 import { ChevronRightIcon, ChevronLeftIcon } from "@chakra-ui/icons";
+import "./slider.css";
 
 function SampleNextArrow(props: any) {
   const { className, style, onClick } = props;
   return (
     <div
-      className={className}
-      style={{ ...style, display: "block", background: "red" }}
-      onClick={onClick}
-    />
+      className="slick-next"
+      style={{ ...style, display: "block" }}
+      onClick={onClick}></div>
   );
 }
 
@@ -25,27 +28,25 @@ function SamplePrevArrow(props: any) {
   const { className, style, onClick } = props;
   return (
     <div
-      className={className}
-      style={{ ...style, display: "block", background: "green" }}
-      onClick={onClick}
-    />
+      className="slick-prev"
+      style={{ ...style, display: "block" }}
+      onClick={onClick}></div>
   );
 }
 
-const settings = {
-  dots: true,
-  infinite: true,
-  arrows: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: true,
-  speed: 500,
-  autoplaySpeed: 5000,
-  nextArrow: <SampleNextArrow />,
-  prevArrow: <SamplePrevArrow />,
-};
-
 export const SliderContent = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    arrows: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 500,
+    autoplaySpeed: 5000,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+  };
   const cards = [
     {
       name: "Maria Jones",
@@ -86,12 +87,12 @@ export const SliderContent = () => {
 
         <Slider {...settings}>
           {cards.map((card, index) => (
-            <Box as="section" minW={"100%"}>
+            <Box as="section" minW={"100%"} minH={{ lg: "550px" }}>
               <Box
                 maxW="3xl"
                 mx="auto"
                 px={{ base: "6", md: "8" }}
-                pt="12"
+                pt="100px"
                 pb="16">
                 <Flex direction="column" align="center" textAlign="center">
                   <Image
