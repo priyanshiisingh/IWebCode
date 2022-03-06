@@ -2,9 +2,7 @@ import { ReactElement } from "react";
 import { Box, SimpleGrid, Text, Image, Stack, Flex } from "@chakra-ui/react";
 import { FcAssistant, FcDonate, FcInTransit } from "react-icons/fc";
 import "./heroFeature.css";
-import image1 from "../images/stack.png";
-import image2 from "../images/devices.png";
-import image3 from "../images/local_mall.png";
+
 import Icon from "./IconsFolder/Icon";
 import Icon2 from "./IconsFolder/Icon2";
 import Icon3 from "./IconsFolder/Icon3";

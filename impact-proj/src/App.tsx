@@ -12,16 +12,19 @@ import Footer from "./components/FooterSettings/Footer";
 import "./App.css";
 import { SliderContent } from "./components/CarouselSettings/Slider";
 // import { New } from "./components/BlogPostSettings/New";
+import Modalex from "./components/VideoSecSettings/Modal";
 
 const App = () => {
   const { brand, links } = navigation;
   return (
     <div className="App">
+      {/* <Modalex /> */}
       <Navbar brand={brand} links={links} />
       <Hero />
       <WhyUsFeature />
       <WhiteBg />
       <VideoSec />
+
       {/* <Carousel /> */}
       <SliderContent />
       {/* <Testimonial /> */}
