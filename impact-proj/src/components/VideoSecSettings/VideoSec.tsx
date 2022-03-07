@@ -35,13 +35,14 @@ export default function VideoSec() {
         spacing={{ base: 8, md: 10 }}
         py={{ base: 20, md: 28 }}
         justify={"center"}
-        direction={{ base: "column", md: "row" }}>
+        direction={{ base: "column-reverse", lg: "row" }}>
         <Box
           position={"relative"}
           height={"100%"}
           p={{ lg: "30px" }}
-          width={{ lg: "50%" }}
-          ml={{ lg: "50px" }}>
+          width={{ md: "75%", lg: "50%" }}
+          // ml={{ lg: "50px" }}
+        >
           <Link
             textDecoration="none"
             _hover={{ textDecoration: "none" }}
@@ -66,10 +67,10 @@ export default function VideoSec() {
           flex={1}
           height={{ lg: "500px" }}
           align={{ lg: "center" }}
-          justify={{ lg: "center" }}
+          justify={{ md: "flex-start", lg: "start" }}
           spacing={{ base: 5, md: 10 }}>
           <Stack
-            align={{ lg: "flex-start" }}
+            align="start"
             justify={"center"}
             minH={{ lg: "100%" }}
             maxW={{ lg: "75%" }}>

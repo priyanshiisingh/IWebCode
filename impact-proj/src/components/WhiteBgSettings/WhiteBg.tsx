@@ -13,43 +13,19 @@ import {
 } from "@chakra-ui/react";
 import { ReactElement } from "react";
 import WhiteBgFeature from "./WhiteBgFeature";
-// import "./whyus.css";
-
-interface FeatureProps {
-  text: string;
-  icon: any;
-  content: string;
-}
-
-const Feature = ({ text, icon, content }: FeatureProps) => {
-  return (
-    <Stack direction={"row"} align={"center"} mt={"25px"}>
-      <Stack className="whyusimage">
-        <Image src={icon} alt="image" />
-      </Stack>
-      <Stack className="whyusContent">
-        <Text fontWeight={700} fontSize={"20px"}>
-          {text}
-        </Text>
-        <Text>{content}</Text>
-      </Stack>
-    </Stack>
-  );
-};
 
 export default function WhiteBg() {
   return (
-    <Container maxW={"100%"}>
-      <Stack align={"center"}>
+    <Container maxW={"100%"} mt={"155px"}>
+      <Stack align={"center"} justify={"center"}>
         <SimpleGrid
           columns={{ base: 1, lg: 2 }}
           spacing={"10"}
-          mt={{ lg: "115px" }}
-          mx={{ lg: "150px" }}
-          mb={{ lg: "50px" }}>
-          <Stack spacing={4}>
+          mx={{ lg: "80px", xl: "150px" }}
+          mb="50px">
+          <Stack spacing={4} width={{ lg: "70%" }} justify="center">
             <Heading>Why Growing Your Business is Important</Heading>
-            <Text color={"gray.500"} fontSize={"lg"}>
+            <Text color={"gray.500"} fontSize={"md"}>
               Labore id odit sit optio, voluptas sequi nobis aliquid dignissimos
               iure recusandae vitae nam facere hic quis voluptate cum quae.
               Deserunt, harum, incidunt ex nesciunt est temporibus ipsum, vel
@@ -71,13 +47,13 @@ export default function WhiteBg() {
               Learn More
             </Button>
           </Stack>
-          <Flex>
+          <Stack justify="center">
             <Image
               alt={"feature image"}
               src={"https://untree.co/demos/impact/images/illustration-1.jpg"}
               width={"100%"}
             />
-          </Flex>
+          </Stack>
         </SimpleGrid>
         <WhiteBgFeature />
       </Stack>

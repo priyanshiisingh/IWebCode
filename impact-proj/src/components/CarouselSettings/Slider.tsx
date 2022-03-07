@@ -118,12 +118,7 @@ export const SliderContent = () => {
                       {card.designation}
                     </Text>
                   </Box>
-                  {/* <Quotee
-                  name="Marrie Jones"
-                  jobTitle="Marketing Ads Strategist"
-                  imageSrc="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OTN8fGxhZHklMjBoZWFkc2hvdCUyMHNtaWxpbmd8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
-                  mt="8"
-                /> */}
+
                   <Text
                     fontSize={{ base: "lg", md: "xl" }}
                     fontWeight="medium"

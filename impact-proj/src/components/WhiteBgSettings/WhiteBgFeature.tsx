@@ -19,9 +19,9 @@ interface FeatureProps {
 
 const Feature = ({ title, text, icon }: FeatureProps) => {
   return (
-    <Stack direction={{ base: "column", lg: "row" }} m={"25px"}>
+    <Stack direction="row">
       <Stack className="whitebfimage">
-        <Image src={icon} alt={"image"} w={"200px"} />
+        <Image src={icon} alt={"image"} w={"130px"} mr={"20px"} />
       </Stack>
       <Stack align="flex-start" className="whitebfContent">
         <Text
@@ -39,8 +39,8 @@ const Feature = ({ title, text, icon }: FeatureProps) => {
 
 export default function WhiteBgFeature() {
   return (
-    <Box p={4} width={{ lg: "80%" }} borderRadius={"8px"}>
-      <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
+    <Box width={{ lg: "85%" }} borderRadius={"8px"}>
+      <SimpleGrid columns={{ base: 1, md: 1, lg: 3 }}>
         <Feature
           icon={
             "https://untree.co/demos/impact/images/svg/24-hours-support.svg"
