@@ -101,11 +101,11 @@ export const SliderContent = () => {
                     src={card.image}
                     mx="auto"
                     objectFit="cover"
-                    w="16"
-                    h="16"
+                    w="100px"
+                    h="100px"
                     rounded="full"
                     border="5px solid white"
-                    boxShadow="30px"
+                    boxShadow="lg"
                   />
                   <Box mt="3">
                     <Text as="cite" fontStyle="normal" fontWeight="bold">
