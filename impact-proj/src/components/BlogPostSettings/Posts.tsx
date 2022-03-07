@@ -19,7 +19,7 @@ import {
 } from "@chakra-ui/react";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 
-export const BlogPost = () => {
+export const Posts = () => {
   const cards = [
     {
       imageSrc: "https://untree.co/demos/impact/images/post_2.jpg",
@@ -51,7 +51,6 @@ export const BlogPost = () => {
       direction={{ base: "column", md: "row", xl: "row" }}
       justify={{ lg: "space-evenly" }}
       align={"center"}
-      mt={"70px"}
       p={{ base: "35px", lg: "100px" }}>
       {cards.map((card, index) => (
         <Wrap width={{ lg: "28.5%" }}>

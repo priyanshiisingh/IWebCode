@@ -7,7 +7,8 @@ import WhiteBg from "./components/WhiteBgSettings/WhiteBg";
 import VideoSec from "./components/VideoSecSettings/VideoSec";
 // import { Carousel } from "./components/CarouselSettings/Carousel";
 // import Testimonial from "./components/CarouselSettings/TestimonialSettings/Testimonial";
-import { BlogPost } from "./components/BlogPostSettings/BlogPost1";
+import { Posts } from "./components/BlogPostSettings/Posts";
+import BlogPost from "./components/BlogPostSettings/BlogPost";
 import Footer from "./components/FooterSettings/Footer";
 import "./App.css";
 import { SliderContent } from "./components/CarouselSettings/Slider";
@@ -29,6 +30,7 @@ const App = () => {
       <SliderContent />
       {/* <Testimonial /> */}
       <BlogPost />
+      <Posts />
       <Footer />
       {/* <New /> */}
     </div>
