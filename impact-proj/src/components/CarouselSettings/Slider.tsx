@@ -20,7 +20,8 @@ function SampleNextArrow(props: any) {
     <div
       className="slick-next"
       style={{ ...style, display: "block" }}
-      onClick={onClick}></div>
+      onClick={onClick}
+    />
   );
 }
 
@@ -30,7 +31,8 @@ function SamplePrevArrow(props: any) {
     <div
       className="slick-prev"
       style={{ ...style, display: "block" }}
-      onClick={onClick}></div>
+      onClick={onClick}
+    />
   );
 }
 
