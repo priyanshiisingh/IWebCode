@@ -15,10 +15,7 @@ interface FeatureProps {
 
 const Feature = ({ title, text, iconName }: FeatureProps) => {
   return (
-    <Stack
-      className="cardStack"
-      direction={{ base: "column", lg: "row" }}
-      m={"25px"}>
+    <Stack className="cardStack" direction={{ base: "column", lg: "row" }}>
       <Stack>
         <Flex
           w={16}
@@ -35,7 +32,7 @@ const Feature = ({ title, text, iconName }: FeatureProps) => {
         <Text fontWeight={600} fontSize={"20px"} font-family={"Montserrat"}>
           {title}
         </Text>
-        <Text color={"gray.600"} className="hfContent">
+        <Text color={"rgba(255, 255, 255, 0.5)"} className="hfContent">
           {text}
         </Text>
       </Stack>
@@ -46,12 +43,13 @@ const Feature = ({ title, text, iconName }: FeatureProps) => {
 export default function HeroFeature() {
   return (
     <Box
-      p={4}
+      p="50px"
+      minH={"250px"}
       bg={"#009080"}
       width={{ lg: "80%" }}
       borderRadius={"8px"}
       color={"white"}>
-      <SimpleGrid columns={{ base: 1, md: 3 }} spacing={-6}>
+      <SimpleGrid columns={{ base: 1, lg: 3 }}>
         <Feature
           iconName={<Icon2 icon="layers1" size={"50px"} color="white" />}
           title={"Design"}
