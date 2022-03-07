@@ -14,6 +14,7 @@ import {
 import { ReactNode } from "react";
 import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { BiMailSend } from "react-icons/bi";
+import { LinkS, LinkheadS } from "./footerStyles";
 
 const SocialButton = ({
   children,
@@ -60,12 +61,25 @@ export default function Footer() {
       <Box
         bg={"black"}
         color={"white"}
-        pt={{ lg: "60px" }}
-        pl={{ lg: "135px" }}>
+        pt={"60px"}
+        pl={{ base: "10px", md: "30px", lg: "50px", xl: "135px" }}
+        pr={{ base: "10px", md: "30px", xl: "0" }}>
         <Container as={Stack} maxW={"100%"}>
           <SimpleGrid
-            templateColumns={{ sm: "1fr 1fr", md: "2fr 1fr 1fr 2fr" }}>
-            <Stack spacing={6} pr={{ lg: "160px" }} width={{ lg: "550px" }}>
+            templateColumns={{
+              md: "1fr ",
+              lg: "2fr 1fr 1fr 2fr",
+              xl: "2fr 1fr 1fr 2fr",
+            }}>
+            <Stack
+              spacing={6}
+              pr={{ lg: "160px", xl: "80px" }}
+              width={{
+                base: "300px",
+                xs: "200px",
+                md: "610px",
+                lg: "430px",
+              }}>
               <Box>
                 <Text fontWeight={"800"}>About Impact</Text>
               </Box>
@@ -95,34 +109,71 @@ export default function Footer() {
               </Stack>
             </Stack>
             <Stack align={"flex-start"}>
-              <ListHeader>Links</ListHeader>
-              <Link href={"#"}>About us</Link>
-              <Link href={"#"}>Services</Link>
-              <Link href={"#"}>News</Link>
-              <Link href={"#"}>Careers</Link>
-              <Link href={"#"}>Contact</Link>
+              <Stack mt={{ base: "40px", xl: "0" }}>
+                <ListHeader>Links</ListHeader>
+              </Stack>
+
+              <Link href={"#"}>
+                <LinkS>About us</LinkS>
+              </Link>
+              <Link href={"#"}>
+                <LinkS>Services</LinkS>
+              </Link>
+              <Link href={"#"}>
+                <LinkS>News</LinkS>
+              </Link>
+              <Link href={"#"}>
+                <LinkS>Careers</LinkS>
+              </Link>
+              <Link href={"#"}>
+                <LinkS>Contact</LinkS>
+              </Link>
             </Stack>
             <Stack align={"flex-start"}>
-              <ListHeader>Company</ListHeader>
-              <Link href={"#"}>About us</Link>
-              <Link href={"#"}>Service</Link>
-              <Link href={"#"}>News</Link>
-              <Link href={"#"}>Career</Link>
-              <Link href={"#"}>Contact</Link>
+              <Stack mt={{ base: "30px", xl: "0" }}>
+                <ListHeader>Company</ListHeader>
+              </Stack>
+              <Link href={"#"}>
+                <LinkS>About us</LinkS>
+              </Link>
+              <Link href={"#"}>
+                <LinkS>Service</LinkS>
+              </Link>
+              <Link href={"#"}>
+                <LinkS>News</LinkS>
+              </Link>
+              <Link href={"#"}>
+                <LinkS>Career</LinkS>
+              </Link>
+              <Link href={"#"}>
+                <LinkS>Contact</LinkS>
+              </Link>
             </Stack>
             <Stack align={"flex-start"}>
-              <ListHeader>Contact</ListHeader>
-              <Text>43 Raymouth Rd. Baltemoer, London 3910</Text>
-              <Link href={"#"}>+1(123)-456-789</Link>
-              <Link href={"#"}>+1(123)-456-789</Link>
-              <Link href={"#"}>info@mydomain.com</Link>
+              <Stack mt={{ base: "30px", xl: "0" }}>
+                <ListHeader>Contact</ListHeader>
+              </Stack>
+              <Text>
+                <LinkS>43 Raymouth Rd. Baltemoer, London 3910</LinkS>
+              </Text>
+              <Link href={"#"}>
+                <LinkS>+1(123)-456-789</LinkS>
+              </Link>
+              <Link href={"#"}>
+                <LinkS>+1(123)-456-789</LinkS>
+              </Link>
+              <Link href={"#"}>
+                <LinkS>info@mydomain.com</LinkS>
+              </Link>
             </Stack>
           </SimpleGrid>
         </Container>
       </Box>
-      <Stack mt={{ lg: "70px" }} pb={{ lg: "85px" }}>
+      <Stack mt={"70px"} pb={"85px"} px={{ base: "30px", lg: "0", xl: "0" }}>
         <Text textAlign={"center"}>
-          Copyright ©2022. All Rights Reserved. — Designed with love by
+          <LinkS>
+            Copyright ©2022. All Rights Reserved. — Designed with love by
+          </LinkS>
           Untree.co • License
         </Text>
       </Stack>

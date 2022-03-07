@@ -89,7 +89,10 @@ export const SliderContent = () => {
 
         <Slider {...settings}>
           {cards.map((card, index) => (
-            <Box as="section" minW={"100%"} minH={{ lg: "550px" }}>
+            <Box
+              as="section"
+              minW={"100%"}
+              minH={{ base: "600px", md: "550px" }}>
               <Box
                 maxW="3xl"
                 mx="auto"

@@ -52,11 +52,11 @@ export const BlogPost = () => {
       justify={{ lg: "space-evenly" }}
       align={"center"}
       mt={"70px"}
-      p={"100px"}>
+      p={{ base: "35px", lg: "100px" }}>
       {cards.map((card, index) => (
         <Wrap width={{ lg: "28.5%" }}>
           <WrapItem>
-            <Box>
+            <Box mb={{ base: "60px", lg: "0" }}>
               <Box borderRadius="lg" overflow="hidden" width="100%">
                 <Link textDecoration="none" _hover={{ textDecoration: "none" }}>
                   <Image src={card.imageSrc} alt="some text" width="100%" />
@@ -81,9 +81,11 @@ export const BlogPost = () => {
               <Text as="p" fontSize="md" marginTop="2">
                 {card.content}
               </Text>
-              <Link textDecoration={"none"} color="#f85a40">
-                Read More <ChevronRightIcon />
-              </Link>
+              <Stack mt="15px">
+                <Link textDecoration={"none"} color="#f85a40">
+                  Read More <ChevronRightIcon />
+                </Link>
+              </Stack>
             </Box>
           </WrapItem>
         </Wrap>

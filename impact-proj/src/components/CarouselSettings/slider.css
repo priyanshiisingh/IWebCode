@@ -58,3 +58,10 @@ ul.slick-dots {
 section.slick-dotted.slick-slider {
     margin-bottom: 0;
 }
+
+@media only screen and (max-width: 765px) {
+    .slick-prev:before,
+    .slick-next:before {
+        display: none;
+    }
+}
