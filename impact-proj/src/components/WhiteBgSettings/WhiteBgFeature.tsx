@@ -19,9 +19,9 @@ interface FeatureProps {
 
 const Feature = ({ title, text, icon }: FeatureProps) => {
   return (
-    <Stack>
+    <Stack direction={{ base: "column", lg: "row" }} m={"25px"}>
       <Stack className="whitebfimage">
-        <Image src={icon} alt={"image"} w={"50px"} />
+        <Image src={icon} alt={"image"} w={"200px"} />
       </Stack>
       <Stack align="flex-start" className="whitebfContent">
         <Text

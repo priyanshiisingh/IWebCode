@@ -2,12 +2,3 @@
     text-align: start;
     color: rgba(255, 255, 255, 0.5);
 }
-
-.img {
-    -webkit-filter: invert(1);
-    filter: invert(1);
-}
-
-.icon-stack:before {
-    content: "\e901";
-}
