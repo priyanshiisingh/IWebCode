@@ -44,7 +44,7 @@ export const SliderContent = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 500,
+    speed: 600,
     autoplaySpeed: 5000,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
@@ -122,7 +122,7 @@ export const SliderContent = () => {
                   mt="8"
                 /> */}
                   <Text
-                    fontSize={{ base: "xl", md: "2xl" }}
+                    fontSize={{ base: "lg", md: "xl" }}
                     fontWeight="medium"
                     mt="6"
                     fontFamily={"Georgia, serif"}>
