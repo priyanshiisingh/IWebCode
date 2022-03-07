@@ -17,22 +17,28 @@ import "./slider.css";
 function SampleNextArrow(props: any) {
   const { className, style, onClick } = props;
   return (
-    <div
+    <Button
       className="slick-next"
       style={{ ...style, display: "block" }}
-      onClick={onClick}
-    />
+      onClick={onClick}>
+      <div>
+        <ChevronRightIcon color="red" />
+      </div>
+    </Button>
   );
 }
 
 function SamplePrevArrow(props: any) {
   const { className, style, onClick } = props;
   return (
-    <div
+    <Button
       className="slick-prev"
       style={{ ...style, display: "block" }}
-      onClick={onClick}
-    />
+      onClick={onClick}>
+      <div>
+        <ChevronLeftIcon color="red" />
+      </div>
+    </Button>
   );
 }
 
