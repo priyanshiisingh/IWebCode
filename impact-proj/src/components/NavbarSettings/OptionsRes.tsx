@@ -1,20 +1,14 @@
-import "./onecss.css";
-import {
-  HamburgerIcon,
-  ChevronDownIcon,
-  ChevronRightIcon,
-} from "@chakra-ui/icons";
+import "./optionsRes.css";
+import { HamburgerIcon } from "@chakra-ui/icons";
+import DrawerComp from "./Drawer";
 
 const Resnav = () => {
   return (
     <div>
+      <button className="hambtn">
+        <DrawerComp />
+      </button>
       <nav id="menu">
-        <label htmlFor="tm" id="toggle-menu">
-          <span className="drop-icon">
-            <HamburgerIcon />
-          </span>
-        </label>
-        <input type="checkbox" id="tm" />
         <ul className="main-menu clearfix">
           <li>
             <a href="#">Home</a>
@@ -22,15 +16,11 @@ const Resnav = () => {
           <li>
             <a href="#">
               Dropdown
-              <span className="drop-icon">
-                <ChevronDownIcon />
-              </span>
+              <span className="drop-icon">▾</span>
               <label
                 title="Toggle Drop-down"
                 className="drop-icon"
-                htmlFor="sm1">
-                <ChevronDownIcon />
-              </label>
+                htmlFor="sm1"></label>
             </a>
             <input type="checkbox" id="sm1" />
             <ul className="sub-menu">
@@ -40,15 +30,11 @@ const Resnav = () => {
               <li>
                 <a href="#">
                   Menu Two
-                  <span className="drop-icon">
-                    <ChevronRightIcon />
-                  </span>
+                  <span className="drop-icon">▾</span>
                   <label
                     title="Toggle Drop-down"
                     className="drop-icon"
-                    htmlFor="sm2">
-                    <ChevronDownIcon />
-                  </label>
+                    htmlFor="sm2"></label>
                 </a>
                 <input type="checkbox" id="sm2" />
                 <ul className="sub-menu">
@@ -78,7 +64,7 @@ const Resnav = () => {
             <a href="#">About</a>
           </li>
           <li>
-            <a href="#">Contact Us</a>
+            <a href="#">Contact Us </a>
           </li>
         </ul>
       </nav>
