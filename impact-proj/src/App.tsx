@@ -6,10 +6,10 @@ import Footer from "./components/FooterSettings/Footer";
 import "./App.css";
 
 const App = () => {
-  const { brand, links } = navigation;
+  const { brand } = navigation;
   return (
     <div className="App">
-      <Navbar brand={brand} links={links} />
+      <Navbar brand={brand} />
       <Body />
       <Footer />
     </div>

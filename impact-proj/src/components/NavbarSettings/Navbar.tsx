@@ -1,20 +1,10 @@
 import * as React from "react";
 import styled from "styled-components";
 import { Theme, Nav, Brand, Ul, Li, NavLinksStyles } from "./NavbarStyles";
+import Resnav from "../Navbar/One";
 
-const Navbar = (props: {
-  brand: { name: string; to: string };
-  links: Array<{ name: string; to: string }>;
-}) => {
-  const { brand, links } = props;
-  const NavLinks: any = () =>
-    links.map((link: { name: string; to: string }) => (
-      <Li key={link.name}>
-        <NavLinksStyles>
-          <a href={link.to}>{link.name}</a>
-        </NavLinksStyles>
-      </Li>
-    ));
+const Navbar = (props: { brand: { name: string; to: string } }) => {
+  const { brand } = props;
 
   return (
     <Nav>
@@ -23,9 +13,7 @@ const Navbar = (props: {
           {brand.name}
         </a>
       </Brand>
-      <Ul>
-        <NavLinks />
-      </Ul>
+      <Resnav />
     </Nav>
   );
 };
