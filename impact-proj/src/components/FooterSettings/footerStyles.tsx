@@ -8,4 +8,12 @@ const LinkheadS = styled.span`
   margin-top: 25px;
 `;
 
-export { LinkS, LinkheadS };
+const Span = styled.span`
+  color: #f85a40;
+`;
+
+const LHeader = styled.p`
+  font-family: "Montserrat", sans-serif !important;
+`;
+
+export { LinkS, LinkheadS, Span, LHeader };

@@ -12,9 +12,17 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import { ReactNode } from "react";
-import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import {
+  FaInstagram,
+  FaTwitter,
+  FaFacebookF,
+  FaLinkedin,
+  FaPinterest,
+  FaPinterestP,
+  FaDribbble,
+} from "react-icons/fa";
 import { BiMailSend } from "react-icons/bi";
-import { LinkS, LinkheadS } from "./footerStyles";
+import { LinkS, LinkheadS, Span, LHeader } from "./footerStyles";
 
 const SocialButton = ({
   children,
@@ -81,36 +89,43 @@ export default function Footer() {
                 lg: "430px",
               }}>
               <Box>
-                <Text fontWeight={"800"}>About Impact</Text>
+                <LHeader>
+                  <Text fontWeight={"700"} fontSize={"16px"}>
+                    About Impact
+                    <Span>.</Span>
+                  </Text>
+                </LHeader>
               </Box>
-              <Text fontSize={"sm"}>
+              <Text fontSize={"sm"} color={"rgba(255, 255, 255, 0.5)"}>
                 Far far away, behind the word mountains, far from the countries
                 Vokalia and Consonantia, there live the blind texts.
               </Text>
               <Stack direction={"row"}>
+                <SocialButton label={"Instagram"} href={"#"}>
+                  <FaInstagram />
+                </SocialButton>
                 <SocialButton label={"Twitter"} href={"#"}>
                   <FaTwitter />
                 </SocialButton>
-                <SocialButton label={"YouTube"} href={"#"}>
-                  <FaYoutube />
+                <SocialButton label={"Facebook"} href={"#"}>
+                  <FaFacebookF />
                 </SocialButton>
-                <SocialButton label={"Instagram"} href={"#"}>
-                  <FaInstagram />
+                <SocialButton label={"LinkdIn"} href={"#"}>
+                  <FaLinkedin />
                 </SocialButton>
-                <SocialButton label={"Instagram"} href={"#"}>
-                  <FaInstagram />
+                <SocialButton label={"Pintrest"} href={"#"}>
+                  <FaPinterest />
                 </SocialButton>
-                <SocialButton label={"Instagram"} href={"#"}>
-                  <FaInstagram />
-                </SocialButton>
-                <SocialButton label={"Instagram"} href={"#"}>
-                  <FaInstagram />
+                <SocialButton label={"Dribbble"} href={"#"}>
+                  <FaDribbble />
                 </SocialButton>
               </Stack>
             </Stack>
             <Stack align={"flex-start"}>
               <Stack mt={{ base: "40px", xl: "0" }}>
-                <ListHeader>Links</ListHeader>
+                <LHeader>
+                  <ListHeader>Links</ListHeader>
+                </LHeader>
               </Stack>
 
               <Link href={"#"}>
@@ -131,7 +146,9 @@ export default function Footer() {
             </Stack>
             <Stack align={"flex-start"}>
               <Stack mt={{ base: "30px", xl: "0" }}>
-                <ListHeader>Company</ListHeader>
+                <LHeader>
+                  <ListHeader>Company</ListHeader>
+                </LHeader>
               </Stack>
               <Link href={"#"}>
                 <LinkS>About us</LinkS>
@@ -151,7 +168,9 @@ export default function Footer() {
             </Stack>
             <Stack align={"flex-start"}>
               <Stack mt={{ base: "30px", xl: "0" }}>
-                <ListHeader>Contact</ListHeader>
+                <LHeader>
+                  <ListHeader>Contact</ListHeader>
+                </LHeader>
               </Stack>
               <Text>
                 <LinkS>43 Raymouth Rd. Baltemoer, London 3910</LinkS>
