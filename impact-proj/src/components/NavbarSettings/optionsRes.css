@@ -33,7 +33,6 @@
 
 #menu li:hover>input[type="checkbox"]+.sub-menu {
     display: block;
-    transition: all 0.9s ease-in-out;
     background-color: white;
 }
 
@@ -100,7 +99,7 @@
     }
 }
 
-@media only screen and (max-width: 832px) {
+@media only screen and (max-width: 1024px) {
     .hambtn {
         display: block;
     }
