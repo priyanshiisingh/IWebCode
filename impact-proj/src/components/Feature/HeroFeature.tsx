@@ -47,7 +47,7 @@ export default function HeroFeature() {
       width={{ lg: "80%" }}
       borderRadius={"8px"}
       color={"white"}>
-      <SimpleGrid columns={{ base: 1, lg: 3 }}>
+      <SimpleGrid columns={{ base: 1, lg: 3 }} spacing={{ base: "6" }}>
         <Feature
           iconName={<Icon2 icon="layers1" size={"50px"} color="white" />}
           title={"Design"}
