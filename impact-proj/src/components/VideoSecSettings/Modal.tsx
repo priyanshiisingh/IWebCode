@@ -49,7 +49,15 @@ function Modalex() {
         {overlay}
         <ModalContent background="transparent">
           <Stack justify="center" align="center">
-            <AspectRatio minW={"962px"} ratio={2}>
+            <AspectRatio
+              minW={{
+                xs: "350px",
+                sm: "500px",
+                md: "700px",
+                lg: "850px",
+                xl: "962px",
+              }}
+              ratio={2}>
               <iframe
                 src="https://www.youtube.com/embed/KI2lsdXJQ40"
                 title="YouTube video player"
