@@ -10,3 +10,8 @@
 .cbtn:hover {
     background: none !important;
 }
+
+.line {
+    width: 20px;
+    color: white;
+}

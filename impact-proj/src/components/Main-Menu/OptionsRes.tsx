@@ -4,7 +4,7 @@ import {
   ChevronDownIcon,
   ChevronRightIcon,
 } from "@chakra-ui/icons";
-import DrawerComp from "./Drawer";
+import DrawerComp from "../DrawerSettings/Drawer";
 
 const Resnav = () => {
   return (

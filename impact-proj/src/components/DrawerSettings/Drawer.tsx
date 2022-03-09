@@ -4,6 +4,7 @@ import {
   DrawerFooter,
   DrawerHeader,
   DrawerOverlay,
+  IconButton,
   DrawerContent,
   DrawerCloseButton,
   Button,
@@ -15,22 +16,20 @@ import { HamburgerIcon, ChevronDownIcon } from "@chakra-ui/icons";
 import { useRef, useState } from "react";
 import "./drawer.css";
 
-import Menu from "./Menu";
+import Menu from "../Drawer-Menu/Menu";
 
 function DrawerComp() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   //   const btnRef = React.useRef(0);
+  //onClick={onOpen}
 
   return (
     <>
-      <Button
-        colorScheme="teal"
-        variant="unstyled"
-        onClick={onOpen}
-        className="hbtn">
-        <HamburgerIcon />
+      <Button onClick={onOpen} variant="unstyled" className="hbtn">
+        <HamburgerIcon w={10} h={10} />
       </Button>
+
       <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
         <DrawerContent>
           <DrawerCloseButton className="cbtn" variant="unstyled" />
