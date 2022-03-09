@@ -1,5 +1,9 @@
 import "./optionsRes.css";
-import { HamburgerIcon } from "@chakra-ui/icons";
+import {
+  HamburgerIcon,
+  ChevronDownIcon,
+  ChevronRightIcon,
+} from "@chakra-ui/icons";
 import DrawerComp from "./Drawer";
 
 const Resnav = () => {
@@ -16,7 +20,9 @@ const Resnav = () => {
           <li>
             <a href="#">
               Dropdown
-              <span className="drop-icon">▾</span>
+              <span className="drop-icon">
+                <ChevronDownIcon />
+              </span>
               <label
                 title="Toggle Drop-down"
                 className="drop-icon"
@@ -29,8 +35,12 @@ const Resnav = () => {
               </li>
               <li>
                 <a href="#">
-                  Menu Two
-                  <span className="drop-icon">▾</span>
+                  <p className="innerp">
+                    Menu Two
+                    <span className="drop-icon">
+                      <ChevronRightIcon />
+                    </span>
+                  </p>
                   <label
                     title="Toggle Drop-down"
                     className="drop-icon"
