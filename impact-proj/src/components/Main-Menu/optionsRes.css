@@ -1,3 +1,9 @@
+.head {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
 #menu ul span.drop-icon {
     display: inline-block;
 }

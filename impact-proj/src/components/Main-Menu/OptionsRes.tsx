@@ -8,7 +8,7 @@ import DrawerComp from "../DrawerSettings/Drawer";
 
 const Resnav = () => {
   return (
-    <div>
+    <div className="head">
       <button className="hambtn">
         <DrawerComp />
       </button>

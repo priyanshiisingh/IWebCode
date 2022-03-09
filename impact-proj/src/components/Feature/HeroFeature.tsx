@@ -29,9 +29,7 @@ const Feature = ({ title, text, iconName }: FeatureProps) => {
         </Flex>
       </Stack>
       <Stack align="flex-start">
-        <Text fontWeight={600} fontSize={"20px"} font-family={"Montserrat"}>
-          {title}
-        </Text>
+        <Text className="title">{title}</Text>
         <Text color={"rgba(255, 255, 255, 0.5)"} className="hfContent">
           {text}
         </Text>

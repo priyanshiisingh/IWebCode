@@ -26,13 +26,11 @@ const Feature = ({ text, icon, content }: FeatureProps) => {
         <Image
           src={icon}
           alt="image"
-          maxW={{ base: "45px", lg: "45px", xl: "45px" }}
+          maxW={{ base: "50px", lg: "50px", xl: "50px" }}
         />
       </Stack>
       <Stack className="whyusContent">
-        <Text fontWeight={700} fontSize={"20px"}>
-          {text}
-        </Text>
+        <Text className="sub">{text}</Text>
         <Text maxW={{ xl: "430px" }}>{content}</Text>
       </Stack>
     </Stack>
@@ -43,14 +41,14 @@ export default function WhyUsFeature() {
   return (
     <Container
       maxW={"100%"}
-      pt={"155px"}
-      px={{ base: "30px", md: "50px", lg: "80px", xl: "150px" }}
+      pt={"120px"}
+      px={{ base: "30px", md: "120px", lg: "80px", xl: "150px" }}
       pb="50px"
       background={"#fafafa"}>
       <SimpleGrid columns={{ base: 1, lg: 2 }} spacing={"10"}>
-        <Stack spacing={4}>
-          <Heading>Why you should choose us</Heading>
-          <Stack spacing={4}>
+        <Stack spacing={2}>
+          <Heading className="heading">Why you should choose us</Heading>
+          <Stack spacing={8}>
             <Feature
               icon={
                 "https://untree.co/demos/impact/images/svg/24-hours-support.svg"
@@ -69,7 +67,7 @@ export default function WhyUsFeature() {
             />
           </Stack>
         </Stack>
-        <Flex>
+        <Flex width={{ lg: "100%" }}>
           <Image
             alt={"feature image"}
             src={"https://untree.co/demos/impact/images/about-us-min.png"}

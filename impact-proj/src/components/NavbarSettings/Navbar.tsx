@@ -1,18 +1,15 @@
 import * as React from "react";
-import styled from "styled-components";
-import { Theme, Nav, Brand, Ul, Li, NavLinksStyles } from "./NavbarStyles";
 import Resnav from "../Main-Menu/OptionsRes";
+import "./navbar.css";
 
 const Navbar = () => {
   return (
-    <Nav>
-      <Brand>
-        <a href="#" color="white">
-          Impact
-        </a>
-      </Brand>
+    <div className="nav">
+      <a href="#" className="brand">
+        Impact
+      </a>
       <Resnav />
-    </Nav>
+    </div>
   );
 };
 

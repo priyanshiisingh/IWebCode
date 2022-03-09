@@ -17,13 +17,13 @@ export default function Hero() {
     <Container maxW={"100%"} bg={"#008374"} pt={"15rem"}>
       <Stack textAlign={"center"} align={"center"}>
         <Heading
-          fontWeight={700}
-          fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
+          className="heading"
+          fontSize={{ base: "3xl", md: "4xl", lg: "40px" }}
           color={"white"}
           maxW={{ lg: "500px", xl: "600px" }}>
           Let's growth your business with us
         </Heading>
-        <Text color={"rgba(255, 255, 255, 0.8)"} maxW={"520px"}>
+        <Text maxW={"525px"} className="master">
           Sapiente, assumenda suscipit autem ab expedita dignissimos, corrupti
           iusto nobis ex aperiam cumque reprehenderit, saepe culpa qui eos ullam
           minima quo, consequuntur
@@ -34,10 +34,10 @@ export default function Hero() {
             px={"30px"}
             py={"25px"}
             colorScheme={"teal"}
-            fontWeight={"400"}
+            fontWeight={"500"}
             bg={"#f85a40"}
             _hover={{ bg: "transparent", border: "2px solid white" }}
-            mt={"30px"}
+            mt={"35px"}
             mb={"150px"}
             maxW={"fit-content"}>
             Get In Touch

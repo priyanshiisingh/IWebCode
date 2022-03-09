@@ -8,3 +8,17 @@
     margin-right: 20px;
     height: 100%;
 }
+
+.heading {
+    font-family: "Montserrat", sans-serif !important;
+    margin-bottom: 3rem !important;
+    font-weight: bold;
+}
+
+.sub {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 0;
+    line-height: 1.2;
+}

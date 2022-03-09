@@ -19,9 +19,13 @@ interface FeatureProps {
 
 const Feature = ({ title, text, icon }: FeatureProps) => {
   return (
-    <Stack direction="row">
+    <Stack direction="row" mt={"70px"}>
       <Stack className="whitebfimage">
-        <Image src={icon} alt={"image"} w={"130px"} mr={"20px"} />
+        <Image
+          src={icon}
+          alt={"image"}
+          maxW={{ base: "50px", lg: "50px", xl: "50px" }}
+        />
       </Stack>
       <Stack align="flex-start" className="whitebfContent">
         <Text
@@ -39,7 +43,7 @@ const Feature = ({ title, text, icon }: FeatureProps) => {
 
 export default function WhiteBgFeature() {
   return (
-    <Box width={{ lg: "85%" }} borderRadius={"8px"}>
+    <Box width={{ lg: "100%" }} borderRadius={"8px"}>
       <SimpleGrid columns={{ base: 1, md: 1, lg: 3 }}>
         <Feature
           icon={
