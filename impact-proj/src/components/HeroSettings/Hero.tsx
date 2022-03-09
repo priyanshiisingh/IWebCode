@@ -10,7 +10,7 @@ import {
   IconProps,
 } from "@chakra-ui/react";
 import "./hero.css";
-import HeroFeature from "./HeroFeature";
+import HeroFeature from "../Feature/HeroFeature";
 
 export default function Hero() {
   return (
