@@ -2,6 +2,7 @@
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     line-height: 1.8;
+    margin-right: 90px;
 }
 
 #menu ul span.drop-icon {
@@ -96,16 +97,7 @@
     color: #f85a40;
 }
 
-@media only screen and (max-width: 1024px) and (min-width: 832.16px) {
-    #menu li {
-        width: 33.333%;
-    }
-    #menu .sub-menu li {
-        width: auto;
-    }
-}
-
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 990px) {
     .hambtn {
         display: block;
     }
@@ -113,3 +105,8 @@
         display: none;
     }
 }
+
+@media only screen and (min-width: 990px) and (max-width: 1024px) {}
+
+
+/* @media only screen and (max-width: 1024px) and (min-width: 832.16px) */
