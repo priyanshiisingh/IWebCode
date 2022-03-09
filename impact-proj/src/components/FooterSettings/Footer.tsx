@@ -47,7 +47,7 @@ const SocialButton = ({
       justifyContent={"center"}
       transition={"background 0.3s ease"}
       _hover={{
-        bg: useColorModeValue("blackAlpha.200", "whiteAlpha.200"),
+        opacity: "0.2",
       }}>
       <VisuallyHidden>{label}</VisuallyHidden>
       {children}
@@ -128,19 +128,19 @@ export default function Footer() {
                 </LHeader>
               </Stack>
 
-              <Link href={"#"}>
+              <Link href={"#"} _hover={{ textDecoration: "none" }}>
                 <LinkS>About us</LinkS>
               </Link>
-              <Link href={"#"}>
+              <Link href={"#"} _hover={{ textDecoration: "none" }}>
                 <LinkS>Services</LinkS>
               </Link>
-              <Link href={"#"}>
+              <Link href={"#"} _hover={{ textDecoration: "none" }}>
                 <LinkS>News</LinkS>
               </Link>
-              <Link href={"#"}>
+              <Link href={"#"} _hover={{ textDecoration: "none" }}>
                 <LinkS>Careers</LinkS>
               </Link>
-              <Link href={"#"}>
+              <Link href={"#"} _hover={{ textDecoration: "none" }}>
                 <LinkS>Contact</LinkS>
               </Link>
             </Stack>
@@ -150,19 +150,19 @@ export default function Footer() {
                   <ListHeader>Company</ListHeader>
                 </LHeader>
               </Stack>
-              <Link href={"#"}>
+              <Link href={"#"} _hover={{ textDecoration: "none" }}>
                 <LinkS>About us</LinkS>
               </Link>
-              <Link href={"#"}>
+              <Link href={"#"} _hover={{ textDecoration: "none" }}>
                 <LinkS>Service</LinkS>
               </Link>
-              <Link href={"#"}>
+              <Link href={"#"} _hover={{ textDecoration: "none" }}>
                 <LinkS>News</LinkS>
               </Link>
-              <Link href={"#"}>
+              <Link href={"#"} _hover={{ textDecoration: "none" }}>
                 <LinkS>Career</LinkS>
               </Link>
-              <Link href={"#"}>
+              <Link href={"#"} _hover={{ textDecoration: "none" }}>
                 <LinkS>Contact</LinkS>
               </Link>
             </Stack>
@@ -175,13 +175,13 @@ export default function Footer() {
               <Text>
                 <LinkS>43 Raymouth Rd. Baltemoer, London 3910</LinkS>
               </Text>
-              <Link href={"#"}>
+              <Link href={"#"} _hover={{ textDecoration: "none" }}>
                 <LinkS>+1(123)-456-789</LinkS>
               </Link>
-              <Link href={"#"}>
+              <Link href={"#"} _hover={{ textDecoration: "none" }}>
                 <LinkS>+1(123)-456-789</LinkS>
               </Link>
-              <Link href={"#"}>
+              <Link href={"#"} _hover={{ textDecoration: "none" }}>
                 <LinkS>info@mydomain.com</LinkS>
               </Link>
             </Stack>

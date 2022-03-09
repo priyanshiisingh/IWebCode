@@ -82,7 +82,10 @@ export const Posts = () => {
                 {card.content}
               </Text>
               <Stack mt="15px">
-                <Link className="link" color="#f85a40">
+                <Link
+                  className="link"
+                  color="#f85a40"
+                  _hover={{ textDecoration: "none" }}>
                   Read More <ChevronRightIcon />
                 </Link>
               </Stack>

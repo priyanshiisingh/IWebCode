@@ -1,6 +1,19 @@
 .navigation {
     margin-top: 20%;
     width: 100%;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.span1 {
+    transition: all 0.5s ease;
+    margin-left: 160px;
+    transform: rotateY(180deg);
+}
+
+.span2 {
+    margin-left: 130px;
 }
 
 

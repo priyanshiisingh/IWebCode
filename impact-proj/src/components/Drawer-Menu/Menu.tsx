@@ -11,9 +11,11 @@ const Menu = () => {
           </li>
 
           <li>
-            <label htmlFor="dropdown">
+            <label htmlFor="dropdown" className="label1">
               Dropdown
-              <ChevronDownIcon />
+              <span className="span1">
+                <ChevronDownIcon />
+              </span>
             </label>
             <input type="checkbox" id="dropdown" />
             <ul className="submenu">
@@ -23,7 +25,9 @@ const Menu = () => {
               <li>
                 <label htmlFor="menu-two">
                   Menu Two
-                  <ChevronDownIcon />
+                  <span className="span2">
+                    <ChevronDownIcon />
+                  </span>
                 </label>
 
                 <input type="checkbox" id="menu-two" />

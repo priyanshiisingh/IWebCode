@@ -32,7 +32,7 @@ function DrawerComp() {
 
       <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
         <DrawerContent>
-          <DrawerCloseButton className="cbtn" variant="unstyled" />
+          <DrawerCloseButton className="cbtn" variant="unstyled" size="lg" />
 
           <DrawerBody>
             <Menu />
