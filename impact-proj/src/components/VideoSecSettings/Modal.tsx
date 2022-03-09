@@ -51,7 +51,6 @@ function Modalex() {
           <Stack justify="center" align="center">
             <AspectRatio
               minW={{
-                xs: "350px",
                 sm: "500px",
                 md: "700px",
                 lg: "850px",
