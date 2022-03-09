@@ -30,7 +30,7 @@ const Feature = ({ text, icon, content }: FeatureProps) => {
         />
       </Stack>
       <Stack className="whyusContent">
-        <Text className="sub">{text}</Text>
+        <Text className="sub2">{text}</Text>
         <Text maxW={{ xl: "430px" }}>{content}</Text>
       </Stack>
     </Stack>
@@ -47,7 +47,7 @@ export default function WhyUsFeature() {
       background={"#fafafa"}>
       <SimpleGrid columns={{ base: 1, lg: 2 }} spacing={"10"}>
         <Stack spacing={2}>
-          <Heading className="heading">Why you should choose us</Heading>
+          <Heading className="heading2">Why you should choose us</Heading>
           <Stack spacing={8}>
             <Feature
               icon={

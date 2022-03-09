@@ -14,6 +14,7 @@ import {
   IconProps,
   useColorModeValue,
 } from "@chakra-ui/react";
+import "./videosec.css";
 import {
   List,
   ListItem,
@@ -74,33 +75,31 @@ export default function VideoSec() {
             justify={"center"}
             minH={{ lg: "100%" }}
             maxW={{ lg: "75%" }}>
-            <Heading fontSize={"30px"} mb={"15px"}>
-              Get Started with Impact
-            </Heading>
-            <Text mb={"15px"}>
+            <Heading className="heading4">Get Started with Impact</Heading>
+            <Text mb={"20px"}>
               Labore id odit sit optio, voluptas sequi nobis aliquid dignissimos
               iure recusandae
             </Text>
-            <Text mb={"200px"}>
+            <Text>
               <List>
                 <ListItem>
-                  <ListIcon as={CheckIcon} color="#f85a40" />
+                  <ListIcon as={CheckIcon} color="#f85a40" mr="20px" />
                   Lorem ipsum dolor sit amet
                 </ListItem>
                 <ListItem>
-                  <ListIcon as={CheckIcon} color="#f85a40" />
+                  <ListIcon as={CheckIcon} color="#f85a40" mr="20px" />
                   Consectetur adipiscing elit
                 </ListItem>
                 <ListItem>
-                  <ListIcon as={CheckIcon} color="#f85a40" />
+                  <ListIcon as={CheckIcon} color="#f85a40" mr="20px" />
                   Integer molestie lorem at massa
                 </ListItem>
                 <ListItem>
-                  <ListIcon as={CheckIcon} color="#f85a40" />
+                  <ListIcon as={CheckIcon} color="#f85a40" mr="20px" />
                   Facilisis in pretium nisl aliquet
                 </ListItem>
                 <ListItem>
-                  <ListIcon as={CheckIcon} color="#f85a40" />
+                  <ListIcon as={CheckIcon} color="#f85a40" mr="20px" />
                   Facilisis in pretium nisl aliquet
                 </ListItem>
               </List>
@@ -114,7 +113,6 @@ export default function VideoSec() {
               font-family={"Open Sans"}
               bg={"#f85a40"}
               _hover={{ bg: "#f85a40" }}
-              mt={"45px"}
               mb={"150px"}
               maxW={"fit-content"}>
               Learn More

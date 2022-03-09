@@ -28,14 +28,10 @@ const Feature = ({ title, text, icon }: FeatureProps) => {
         />
       </Stack>
       <Stack align="flex-start" className="whitebfContent">
-        <Text
-          fontWeight={600}
-          fontSize={"20px"}
-          font-family={"Montserrat"}
-          color={"black"}>
+        <Text className="sub3" color={"black"}>
           {title}
         </Text>
-        <Text color={"gray.600"}>{text}</Text>
+        <Text>{text}</Text>
       </Stack>
     </Stack>
   );
@@ -43,7 +39,7 @@ const Feature = ({ title, text, icon }: FeatureProps) => {
 
 export default function WhiteBgFeature() {
   return (
-    <Box width={{ lg: "100%" }} borderRadius={"8px"}>
+    <Box width={{ lg: "100%" }}>
       <SimpleGrid columns={{ base: 1, md: 1, lg: 3 }}>
         <Feature
           icon={
