@@ -13,6 +13,7 @@ import {
 import { Select } from "@chakra-ui/react";
 import { HamburgerIcon, ChevronDownIcon } from "@chakra-ui/icons";
 import { useRef, useState } from "react";
+import "./drawer.css";
 
 import Menu from "./Menu";
 
@@ -23,12 +24,16 @@ function DrawerComp() {
 
   return (
     <>
-      <Button colorScheme="teal" onClick={onOpen}>
+      <Button
+        colorScheme="teal"
+        variant="unstyled"
+        onClick={onOpen}
+        className="hbtn">
         <HamburgerIcon />
       </Button>
       <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
         <DrawerContent>
-          <DrawerCloseButton />
+          <DrawerCloseButton className="cbtn" variant="unstyled" />
 
           <DrawerBody>
             <Menu />

@@ -1,4 +1,5 @@
 import "./menu.css";
+import { ChevronDownIcon } from "@chakra-ui/icons";
 
 const Menu = () => {
   return (
@@ -8,19 +9,24 @@ const Menu = () => {
           <li>
             <a href="">Home</a>
           </li>
+
           <li>
-            <a href="">About</a>
-          </li>
-          <li>
-            <label htmlFor="products">Dropdown</label>
-            <input type="checkbox" id="products" />
+            <label htmlFor="dropdown">
+              Dropdown
+              <ChevronDownIcon />
+            </label>
+            <input type="checkbox" id="dropdown" />
             <ul className="submenu">
               <li>
                 <a href="">Menu One</a>
               </li>
               <li>
-                <label htmlFor="bottoms">Menu Two</label>
-                <input type="checkbox" id="bottoms" />
+                <label htmlFor="menu-two">
+                  Menu Two
+                  <ChevronDownIcon />
+                </label>
+
+                <input type="checkbox" id="menu-two" />
                 <ul className="sub-submenu">
                   <li>
                     <a href="#">Sub Menu One</a>
