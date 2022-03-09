@@ -17,7 +17,7 @@ export default function Hero() {
     <Container maxW={"100%"} bg={"#008374"} pt={"15rem"}>
       <Stack textAlign={"center"} align={"center"}>
         <Heading
-          className="heading"
+          className="heading1"
           fontSize={{ base: "3xl", md: "4xl", lg: "40px" }}
           color={"white"}
           maxW={{ lg: "500px", xl: "600px" }}>

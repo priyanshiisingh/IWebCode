@@ -25,9 +25,9 @@
     --bs-gutter-y: 0;
 }
 
-.heading {
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
+.heading1 {
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 700;
 }
 
 .master {
