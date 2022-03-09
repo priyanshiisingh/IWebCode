@@ -18,6 +18,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import { ChevronRightIcon } from "@chakra-ui/icons";
+import "./posts.css";
 
 export const Posts = () => {
   const cards = [
@@ -72,7 +73,7 @@ export const Posts = () => {
                 <Text>{card.likes}</Text>
               </HStack>
 
-              <Heading fontSize="xl" marginTop="2">
+              <Heading fontSize="lg" marginTop="2" className="heading7">
                 <Link textDecoration="none" _hover={{ textDecoration: "none" }}>
                   {card.heading}
                 </Link>
@@ -81,7 +82,7 @@ export const Posts = () => {
                 {card.content}
               </Text>
               <Stack mt="15px">
-                <Link textDecoration={"none"} color="#f85a40">
+                <Link className="link" color="#f85a40">
                   Read More <ChevronRightIcon />
                 </Link>
               </Stack>

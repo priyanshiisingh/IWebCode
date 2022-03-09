@@ -1,11 +1,12 @@
 import React from "react";
 import { Box, Heading, Text, Stack, Container, VStack } from "@chakra-ui/react";
-import { Posts } from "./Posts";
+import { Posts } from "../Posts/Posts";
+import "./blogpost.css";
 
 const BlogPost = () => {
   return (
     <VStack mt={"120px"}>
-      <Heading>Blog Post</Heading>
+      <Heading className="heading6">Blog Posts</Heading>
       <Text
         maxW={{
           base: "180px",
