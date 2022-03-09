@@ -21,7 +21,7 @@ import {
   FaPinterestP,
   FaDribbble,
 } from "react-icons/fa";
-import { BiMailSend } from "react-icons/bi";
+
 import { LinkS, LinkheadS, Span, LHeader } from "./footerStyles";
 
 const SocialButton = ({
