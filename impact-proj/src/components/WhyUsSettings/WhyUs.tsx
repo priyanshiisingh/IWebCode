@@ -42,10 +42,10 @@ export default function WhyUsFeature() {
     <Container
       maxW={"100%"}
       pt={"120px"}
-      px={{ base: "30px", md: "120px", lg: "80px", xl: "150px" }}
+      px={{ base: "30px", md: "120px", lg: "80px", xl: "130px" }}
       pb="50px"
       background={"#fafafa"}>
-      <SimpleGrid columns={{ base: 1, lg: 2 }} spacing={"10"}>
+      <SimpleGrid columns={{ base: 1, lg: 2 }} spacing={{ lg: "5" }}>
         <Stack spacing={2}>
           <Heading className="heading2">Why you should choose us</Heading>
           <Stack spacing={8}>
@@ -67,7 +67,7 @@ export default function WhyUsFeature() {
             />
           </Stack>
         </Stack>
-        <Flex width={{ lg: "100%" }}>
+        <Flex width={{ lg: "120%", xl: "100%" }} mt={{ base: "50px", lg: "0" }}>
           <Image
             alt={"feature image"}
             src={"https://untree.co/demos/impact/images/about-us-min.png"}
