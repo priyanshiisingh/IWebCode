@@ -41,16 +41,13 @@ function Modalex() {
         <Icon icon="play3" size={"17px"} color="black" />
       </Button>
 
-      <Modal
-        isCentered
-        onClose={onClose}
-        isOpen={isOpen}
-        motionPreset="slideInBottom">
+      <Modal onClose={onClose} isOpen={isOpen} motionPreset="slideInBottom">
         {overlay}
         <ModalContent background="transparent">
-          <Stack justify="center" align="center">
+          <Stack justify={"center"} align={"center"}>
             <AspectRatio
               minW={{
+                base: "400px",
                 sm: "500px",
                 md: "700px",
                 lg: "850px",
